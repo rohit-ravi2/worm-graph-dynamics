@@ -1,0 +1,59 @@
+{
+ "task": "K1_kato_AVA_HisCl",
+ "nodes": [
+  "AIBL",
+  "AIBR",
+  "ALA",
+  "AVAL",
+  "AVAR",
+  "AVEL",
+  "AVER",
+  "AVFL",
+  "AVFR",
+  "OLQDL",
+  "RIBR",
+  "RID",
+  "RIML",
+  "RIMR",
+  "RIS",
+  "RIVL",
+  "RIVR",
+  "RMED",
+  "RMEL",
+  "RMER",
+  "RMEV",
+  "SMDVL"
+ ],
+ "clamp": [
+  "AVAL",
+  "AVAR"
+ ],
+ "lags": 5,
+ "alpha": 100.0,
+ "steps": 20000,
+ "burn": 1000,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "models": [
+  "ar",
+  "connectome",
+  "connectome_shuffled_0",
+  "connectome_shuffled_1",
+  "connectome_shuffled_2",
+  "connectome_shuffled_3",
+  "connectome_shuffled_4",
+  "geometry_knn",
+  "random_k_0",
+  "random_k_1",
+  "random_k_2",
+  "random_k_3",
+  "random_k_4",
+  "var_dense"
+ ],
+ "train": "WT_NoStim + WT_Stim (12)",
+ "observed_reference": "WT_NoStim (5) vs AVA_HisCl (5)",
+ "frozen_utc": "2026-10-08T18:49:43.056476+00:00"
+}

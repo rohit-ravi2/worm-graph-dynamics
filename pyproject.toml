@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worm-graph-dynamics"
+version = "1.0.0"
+description = "Does the C. elegans connectome help predict whole-brain neural activity? Frozen benchmarks on public data."
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "scipy", "h5py"]
+
+[project.scripts]
+wormlab = "wormlab.cli:main"
+
+[project.optional-dependencies]
+# connectome and neuron identity via wormneuroatlas, DANDI streaming via remfile
+data = ["wormneuroatlas", "remfile"]
+# learned graph models and AUROC
+models = ["torch", "scikit-learn>=1.2"]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

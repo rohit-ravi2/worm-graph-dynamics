@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+wormlab.local.toml
+results/_capsules/
+results/gd/logs/
+results/gd/data_manifests/
+results/gd/benchmarks/L2/fold*.json
+results/gd/benchmarks/L2/gate_controls/
+*.h5
+*.mat
+*.nwb
