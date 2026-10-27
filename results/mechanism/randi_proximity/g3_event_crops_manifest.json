@@ -1,0 +1,14 @@
+{
+ "addendum_sha256": "6621162df515b6f18159aa20d03ae05e74f5c93bf04fa20c8217e29dfea7f4ba",
+ "extractor": {
+  "module": "wormlab.mechanism.randi.event_crops",
+  "source_sha256": "2323367a899b206d9aaa3eaa55bd9de47850ac99914479f6d792947f7843210a",
+  "version": "event_crops/1.0"
+ },
+ "generation": "g3",
+ "note": "Families, statistics and call rules are frozen separately (g3 preregistration) before any JUDGE access.",
+ "parent_manifest_sha256": "6c0626b1d77d0415a7a76396830ea7c4a3e3392cf27b2859b555ea0eed032004",
+ "partitions_reused": true,
+ "purpose": "evoked-volume unmixing: event-window pre/post voxel crops around each target",
+ "reason": "synthetic fixture: an activity-dependent halo absent from the static image reproduces coupling-like T13/T16 signatures under pure contamination; voxel-level unmixing with a free radial halo is required"
+}

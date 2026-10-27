@@ -1,0 +1,43 @@
+{
+ "git_head": "e8f788dd3de1bcfee3c12f72ed3140ed63eb1a30",
+ "git_status_porcelain": "",
+ "python": "3.12.3 (main, Nov  6 2025, 13:44:16) [GCC 13.3.0]",
+ "run_config": {
+  "allow_mixtures": true,
+  "invalid_predictions": [
+   [
+    "H1",
+    "T6_target_flat_nearfield"
+   ],
+   [
+    "H2",
+    "T6_target_flat_nearfield"
+   ],
+   [
+    "H10",
+    "T6_target_flat_nearfield"
+   ]
+  ],
+  "judge_all": true,
+  "judge_partition": "CONFIRMATION",
+  "judge_partitions": [
+   "CONFIRMATION",
+   "RESERVE"
+  ],
+  "max_judge_steps": 6,
+  "mixture_share_tests": [
+   "T17_unmixed_proximity"
+  ],
+  "phenomenon_family_tests": [
+   "T17_unmixed_proximity",
+   "T13_optical_copy_subtracted_proximity"
+  ],
+  "phenomenon_test": "T0_proximity_effect",
+  "policy": "1.4",
+  "preregister_mixtures": true,
+  "release_reserve_to_all": true,
+  "scout_partition": "DISCOVERY",
+  "seed": 20260916,
+  "synthetic_is_confirmation": false
+ }
+}

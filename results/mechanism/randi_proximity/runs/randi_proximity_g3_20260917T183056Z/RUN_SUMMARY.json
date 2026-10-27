@@ -1,0 +1,289 @@
+{
+ "run_id": "randi_proximity_g3_20260917T183056Z",
+ "verdict": "NEW_EXPERIMENT_REQUIRED",
+ "surviving": [
+  "H8[H1+H10].g3",
+  "H8[H1+H6].g3"
+ ],
+ "capsule": "results/_capsules/mechanism_randi_proximity_g3_20260917T183056Z",
+ "capsule_root": "deb2d4d0131b75ea7810b85813888e7afc3e65be00ed5b504d673b1f5723b081",
+ "capsule_verified": true,
+ "tamper": {
+  "one_byte_tamper_detected": true,
+  "tampered_blob": "05bc09d0ac5a3a166604616f3951f3869c25aa549a1f9596ea751a6f609c7cf3"
+ },
+ "calls": {
+  "CONFIRMATION:T0_proximity_effect": [
+   "POS",
+   0.09114672797790666,
+   [
+    0.05905375101960724,
+    0.12416495450022118
+   ]
+  ],
+  "CONFIRMATION:T10_farfield_breadth": [
+   "INCONCLUSIVE",
+   0.0032544959419187913,
+   [
+    -0.005622306580327426,
+    0.01236062467214485
+   ]
+  ],
+  "CONFIRMATION:T8_sham_nearfield": [
+   "INCONCLUSIVE",
+   0.15850340136054422,
+   [
+    -0.23333333333333334,
+    0.5416666666666666
+   ]
+  ],
+  "CONFIRMATION:T11_baseline_covariance": [
+   "POS",
+   0.32284559741763935,
+   [
+    0.21667934870263833,
+    0.457680045926021
+   ]
+  ],
+  "CONFIRMATION:T4_offset_directionality": [
+   "NULL",
+   0.008753878314486804,
+   [
+    -0.007113477630023569,
+    0.02355166033255252
+   ]
+  ],
+  "CONFIRMATION:T6_target_flat_nearfield": [
+   "INCONCLUSIVE",
+   0.016085383331957578,
+   [
+    -0.002353696084420221,
+    0.03824733276229452
+   ]
+  ],
+  "CONFIRMATION:T3_onset_latency": [
+   "NULL",
+   0.0,
+   [
+    -0.020000000000038654,
+    0.03999999999996362
+   ]
+  ],
+  "CONFIRMATION:T2_topology_matched_distance": [
+   "INCONCLUSIVE",
+   0.02110916568649029,
+   [
+    -0.0005231837377556266,
+    0.04183195577453046
+   ]
+  ],
+  "CONFIRMATION:T1_distance_matched_topology": [
+   "NULL",
+   -0.004050482369734276,
+   [
+    -0.017768981402673727,
+    0.005991772270688324
+   ]
+  ],
+  "CONFIRMATION:T7_path_length": [
+   "INCONCLUSIVE",
+   -0.007989130456621623,
+   [
+    -0.02483007692661157,
+    0.006578944364556084
+   ]
+  ],
+  "CONFIRMATION:T9_animal_replication": [
+   "INCONCLUSIVE",
+   0.25,
+   [
+    0.0714285714285714,
+    0.3928571428571429
+   ]
+  ],
+  "CONFIRMATION:T5_control_channel": [
+   "POS",
+   0.11115950403286617,
+   [
+    0.0557942786726323,
+    0.1643013392068663
+   ]
+  ],
+  "RESERVE:T0_proximity_effect": [
+   "POS",
+   0.07560540991930106,
+   [
+    0.044977560271319224,
+    0.10510595346052656
+   ]
+  ],
+  "RESERVE:T10_farfield_breadth": [
+   "NULL",
+   0.0006453859482377013,
+   [
+    -0.007220272153805601,
+    0.00812301901539982
+   ]
+  ],
+  "RESERVE:T11b_baseline_covariance_plane_matched": [
+   "POS",
+   0.16497342627519443,
+   [
+    0.09950696602683623,
+    0.22509757593471694
+   ]
+  ],
+  "RESERVE:T11_baseline_covariance": [
+   "POS",
+   0.27846538672797766,
+   [
+    0.19572174809701468,
+    0.3519862451843956
+   ]
+  ],
+  "RESERVE:T8_sham_nearfield": [
+   "INCONCLUSIVE",
+   0.07495381569423196,
+   [
+    -0.11280700969623948,
+    0.4972613012472261
+   ]
+  ],
+  "RESERVE:T4_offset_directionality": [
+   "NULL",
+   0.013974434906077391,
+   [
+    -0.00104819072643135,
+    0.027989288221115686
+   ]
+  ],
+  "RESERVE:T6_target_flat_nearfield": [
+   "NULL",
+   0.015309427418373262,
+   [
+    0.003095965283121835,
+    0.027125558735052607
+   ]
+  ],
+  "RESERVE:T3_onset_latency": [
+   "NULL",
+   0.00024999999993724487,
+   [
+    -0.03000000000002956,
+    0.22562500000002456
+   ]
+  ],
+  "RESERVE:T2_topology_matched_distance": [
+   "INCONCLUSIVE",
+   0.023569865566196002,
+   [
+    -0.0038568622780732983,
+    0.06249006405864794
+   ]
+  ],
+  "RESERVE:T1_distance_matched_topology": [
+   "INCONCLUSIVE",
+   0.015454901526333215,
+   [
+    -0.012541109785711834,
+    0.04661528989289532
+   ]
+  ],
+  "RESERVE:T7_path_length": [
+   "INCONCLUSIVE",
+   0.016732604355418432,
+   [
+    0.0037830610742467497,
+    0.03581708670621896
+   ]
+  ],
+  "RESERVE:T9_animal_replication": [
+   "INCONCLUSIVE",
+   0.13636363636363635,
+   [
+    -0.04545454545454547,
+    0.28787878787878785
+   ]
+  ],
+  "RESERVE:T12_nucleus_vs_background_voxel": [
+   "INCONCLUSIVE",
+   -0.20244060995534433,
+   [
+    -0.8307506549321417,
+    0.3815947600380865
+   ]
+  ],
+  "CONFIRMATION:T12_nucleus_vs_background_voxel": [
+   "INCONCLUSIVE",
+   0.06448423568263789,
+   [
+    -0.07276037418824417,
+    0.2220386620101768
+   ]
+  ],
+  "CONFIRMATION:T13_optical_copy_subtracted_proximity": [
+   "POS",
+   0.08047988669044988,
+   [
+    0.052531542907127776,
+    0.11262944241732717
+   ]
+  ],
+  "CONFIRMATION:T17_unmixed_proximity": [
+   "POS",
+   0.06409032515733912,
+   [
+    0.03710962919656112,
+    0.09647631392690331
+   ]
+  ],
+  "CONFIRMATION:T18_unmixed_gap_topology": [
+   "INCONCLUSIVE",
+   0.16727831356149186,
+   [
+    0.0,
+    0.22376693637311118
+   ]
+  ],
+  "CONFIRMATION:T19_unmixed_spot_side": [
+   "INCONCLUSIVE",
+   0.06501417717856081,
+   [
+    0.01305181754265635,
+    0.11797102866146225
+   ]
+  ],
+  "RESERVE:T13_optical_copy_subtracted_proximity": [
+   "POS",
+   0.07653567734315497,
+   [
+    0.049848993814954896,
+    0.09972587904228228
+   ]
+  ],
+  "RESERVE:T17_unmixed_proximity": [
+   "INCONCLUSIVE",
+   0.060407172842460215,
+   [
+    0.018630477745550798,
+    0.10473893104265346
+   ]
+  ],
+  "RESERVE:T18_unmixed_gap_topology": [
+   "INCONCLUSIVE",
+   0.0,
+   [
+    0.0,
+    0.0
+   ]
+  ],
+  "RESERVE:T19_unmixed_spot_side": [
+   "INCONCLUSIVE",
+   0.03855076799941707,
+   [
+    0.0016918095302352436,
+    0.0778713767871626
+   ]
+  ]
+ }
+}

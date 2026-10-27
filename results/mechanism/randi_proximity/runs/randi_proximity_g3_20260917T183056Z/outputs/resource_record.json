@@ -1,0 +1,66 @@
+{
+ "seconds": 1359.5,
+ "started": 1789669856.8841705,
+ "steps": [
+  {
+   "partition": "DISCOVERY",
+   "seconds": 410.43,
+   "test_id": "T13_optical_copy_subtracted_proximity"
+  },
+  {
+   "partition": "DISCOVERY",
+   "seconds": 1.11,
+   "test_id": "T17_unmixed_proximity"
+  },
+  {
+   "partition": "DISCOVERY",
+   "seconds": 0.62,
+   "test_id": "T19_unmixed_spot_side"
+  },
+  {
+   "partition": "DISCOVERY",
+   "seconds": 0.25,
+   "test_id": "T18_unmixed_gap_topology"
+  },
+  {
+   "partition": "CONFIRMATION",
+   "seconds": 462.81,
+   "test_id": "T13_optical_copy_subtracted_proximity"
+  },
+  {
+   "partition": "CONFIRMATION",
+   "seconds": 0.53,
+   "test_id": "T17_unmixed_proximity"
+  },
+  {
+   "partition": "CONFIRMATION",
+   "seconds": 0.14,
+   "test_id": "T18_unmixed_gap_topology"
+  },
+  {
+   "partition": "CONFIRMATION",
+   "seconds": 0.28,
+   "test_id": "T19_unmixed_spot_side"
+  },
+  {
+   "partition": "RESERVE",
+   "seconds": 481.19,
+   "test_id": "T13_optical_copy_subtracted_proximity"
+  },
+  {
+   "partition": "RESERVE",
+   "seconds": 1.19,
+   "test_id": "T17_unmixed_proximity"
+  },
+  {
+   "partition": "RESERVE",
+   "seconds": 0.12,
+   "test_id": "T18_unmixed_gap_topology"
+  },
+  {
+   "partition": "RESERVE",
+   "seconds": 0.64,
+   "test_id": "T19_unmixed_spot_side"
+  }
+ ]
+}

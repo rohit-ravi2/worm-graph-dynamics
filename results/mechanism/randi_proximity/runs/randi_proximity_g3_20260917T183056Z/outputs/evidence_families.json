@@ -1,0 +1,557 @@
+{
+ "families": {
+  "O-03b0cfcf5a1da6bf": "O-03b0cfcf5a1da6bf",
+  "O-045e8948176da991": "O-045e8948176da991",
+  "O-06233e4c20d5d777": "O-06233e4c20d5d777",
+  "O-085a9ac460239d5d": "O-085a9ac460239d5d",
+  "O-08bc1438d25f8505": "O-085a9ac460239d5d",
+  "O-08f509c917466131": "O-08f509c917466131",
+  "O-0a8766bf492db8c3": "O-0a8766bf492db8c3",
+  "O-0d3f9a9b11e8b769": "O-0d3f9a9b11e8b769",
+  "O-106cf822299b5b40": "O-106cf822299b5b40",
+  "O-11cc7bc0211fc421": "O-11cc7bc0211fc421",
+  "O-153ee327698cc38b": "O-153ee327698cc38b",
+  "O-16255cb4b33049db": "O-16255cb4b33049db",
+  "O-168436571ae1e2c8": "O-168436571ae1e2c8",
+  "O-1b08d8183f8346f1": "O-11cc7bc0211fc421",
+  "O-1e9d9d8b4f343a8c": "O-1e9d9d8b4f343a8c",
+  "O-22bf961b83e6e82b": "O-08f509c917466131",
+  "O-25a54a1eaccc43c6": "O-25a54a1eaccc43c6",
+  "O-2756ccf8b8e79446": "O-2756ccf8b8e79446",
+  "O-2bf46993566e1306": "O-2bf46993566e1306",
+  "O-2c52f1d12f388105": "O-2c52f1d12f388105",
+  "O-2f335ce08194e951": "O-2f335ce08194e951",
+  "O-2f99e296239e26c6": "O-045e8948176da991",
+  "O-333bb56b011e1ac5": "O-333bb56b011e1ac5",
+  "O-34ebc31475ade73f": "O-34ebc31475ade73f",
+  "O-35447c19b70a54e3": "O-35447c19b70a54e3",
+  "O-370f83001aa34f3e": "O-370f83001aa34f3e",
+  "O-378ffa0b66c0bb76": "O-378ffa0b66c0bb76",
+  "O-3a96094ca0e9bfc0": "O-3a96094ca0e9bfc0",
+  "O-41b364ca5ac5ede8": "O-085a9ac460239d5d",
+  "O-45bf7c287457351e": "O-45bf7c287457351e",
+  "O-4be96dc0f11564c6": "O-4be96dc0f11564c6",
+  "O-4c1aba7326d7eaa9": "O-4c1aba7326d7eaa9",
+  "O-4d3dfecc3a956526": "O-370f83001aa34f3e",
+  "O-4d659cfefae56794": "O-4d659cfefae56794",
+  "O-51699abd7975f316": "O-51699abd7975f316",
+  "O-551d4e911f952698": "O-03b0cfcf5a1da6bf",
+  "O-57b3e1bd535f06b7": "O-57b3e1bd535f06b7",
+  "O-584107b4393fb44c": "O-584107b4393fb44c",
+  "O-5e2041b2c6e892d7": "O-5e2041b2c6e892d7",
+  "O-6066259b18631def": "O-6066259b18631def",
+  "O-606f4f68b4dd0de7": "O-51699abd7975f316",
+  "O-61db774d5182f9bb": "O-153ee327698cc38b",
+  "O-67b2f1826ab404d5": "O-67b2f1826ab404d5",
+  "O-69bcfbc3e740c058": "O-69bcfbc3e740c058",
+  "O-6bf16f4501b5839e": "O-4be96dc0f11564c6",
+  "O-6eeeb3a820f4f9d8": "O-69bcfbc3e740c058",
+  "O-76d40e1247076956": "O-76d40e1247076956",
+  "O-774fadf4e08c5afa": "O-774fadf4e08c5afa",
+  "O-77c01bef96e389d7": "O-77c01bef96e389d7",
+  "O-781b72c20e7ac00e": "O-03b0cfcf5a1da6bf",
+  "O-79ca8ff525aecb96": "O-79ca8ff525aecb96",
+  "O-802de553da0f186e": "O-5e2041b2c6e892d7",
+  "O-80b39e2b67abd288": "O-085a9ac460239d5d",
+  "O-80fefae97685d02a": "O-45bf7c287457351e",
+  "O-87445607ee2689d3": "O-87445607ee2689d3",
+  "O-882673af234818f4": "O-1e9d9d8b4f343a8c",
+  "O-8b5c8c0fd0c1d760": "O-8b5c8c0fd0c1d760",
+  "O-8f6317159f1dc4f9": "O-085a9ac460239d5d",
+  "O-912301e136fed424": "O-912301e136fed424",
+  "O-918b02532a37b3cd": "O-25a54a1eaccc43c6",
+  "O-91aa8f0cc462c612": "O-67b2f1826ab404d5",
+  "O-96e46f2e6ced4429": "O-2756ccf8b8e79446",
+  "O-a11e3e1b89e7cfa4": "O-2f335ce08194e951",
+  "O-a169b6af5dd77d54": "O-a169b6af5dd77d54",
+  "O-a47c10bfc9dd971f": "O-06233e4c20d5d777",
+  "O-a554e1601d12341d": "O-a554e1601d12341d",
+  "O-a7fea6117948511e": "O-085a9ac460239d5d",
+  "O-a80c8a5b4a298557": "O-a80c8a5b4a298557",
+  "O-aad6293b0476637a": "O-2c52f1d12f388105",
+  "O-ac697511bd5c99a0": "O-a169b6af5dd77d54",
+  "O-aced07a92543bcaa": "O-57b3e1bd535f06b7",
+  "O-adb434634e5535ee": "O-34ebc31475ade73f",
+  "O-adb6e4d1f83d1d4e": "O-adb6e4d1f83d1d4e",
+  "O-b000ee3837dfef82": "O-87445607ee2689d3",
+  "O-b204bb2e7ef73e63": "O-b204bb2e7ef73e63",
+  "O-b257ebd5d31d06c1": "O-79ca8ff525aecb96",
+  "O-b267840fd9dd2c1b": "O-67b2f1826ab404d5",
+  "O-b4f4e6b171400cc3": "O-b4f4e6b171400cc3",
+  "O-b65ede6f2b7cd223": "O-b65ede6f2b7cd223",
+  "O-b81eff3c08db67d7": "O-35447c19b70a54e3",
+  "O-be73c1afbabd937f": "O-085a9ac460239d5d",
+  "O-c20608e5a97cf310": "O-1e9d9d8b4f343a8c",
+  "O-caddc5ead32893f5": "O-085a9ac460239d5d",
+  "O-cc063350dc7c1c92": "O-08f509c917466131",
+  "O-cc75d73774614738": "O-b65ede6f2b7cd223",
+  "O-cd42a57217dd9380": "O-168436571ae1e2c8",
+  "O-cdc35fd6df030c1c": "O-168436571ae1e2c8",
+  "O-cf36f031a8ac2a03": "O-045e8948176da991",
+  "O-d744375b3a5fda7d": "O-0d3f9a9b11e8b769",
+  "O-d9d6b09e76e4c24a": "O-11cc7bc0211fc421",
+  "O-dd31167b1b04c709": "O-dd31167b1b04c709",
+  "O-de440dd4b51b28aa": "O-8b5c8c0fd0c1d760",
+  "O-e009f5ebe8863c27": "O-370f83001aa34f3e",
+  "O-e0aa30379d488a62": "O-2bf46993566e1306",
+  "O-e1d713aa29dcba2c": "O-8b5c8c0fd0c1d760",
+  "O-e303e302302db607": "O-adb6e4d1f83d1d4e",
+  "O-e78b73eff407107b": "O-378ffa0b66c0bb76",
+  "O-ec91755442c50a51": "O-b4f4e6b171400cc3",
+  "O-eece4a6fa216d528": "O-35447c19b70a54e3",
+  "O-f0c0a813257119bb": "O-16255cb4b33049db",
+  "O-f3d666127f9b1579": "O-912301e136fed424"
+ },
+ "support_summary": {
+  "H1.g3": {
+   "contradicts": {
+    "analyses": 3,
+    "independent_families": 3
+   },
+   "supports": {
+    "analyses": 42,
+    "independent_families": 16
+   }
+  },
+  "H10.g3": {
+   "contradicts": {
+    "analyses": 4,
+    "independent_families": 2
+   },
+   "supports": {
+    "analyses": 37,
+    "independent_families": 20
+   }
+  },
+  "H2.g3": {
+   "contradicts": {
+    "analyses": 19,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 28,
+    "independent_families": 13
+   }
+  },
+  "H3.g3": {
+   "contradicts": {
+    "analyses": 9,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 32,
+    "independent_families": 18
+   }
+  },
+  "H4.g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 12,
+    "independent_families": 6
+   }
+  },
+  "H5.g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 10,
+    "independent_families": 5
+   }
+  },
+  "H6.g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 28,
+    "independent_families": 13
+   }
+  },
+  "H7.g3": {
+   "contradicts": {
+    "analyses": 18,
+    "independent_families": 8
+   },
+   "supports": {
+    "analyses": 9,
+    "independent_families": 4
+   }
+  },
+  "H8[H1+H10].g3": {
+   "contradicts": {
+    "analyses": 0,
+    "independent_families": 0
+   },
+   "supports": {
+    "analyses": 48,
+    "independent_families": 22
+   }
+  },
+  "H8[H1+H2].g3": {
+   "contradicts": {
+    "analyses": 4,
+    "independent_families": 2
+   },
+   "supports": {
+    "analyses": 39,
+    "independent_families": 18
+   }
+  },
+  "H8[H1+H3].g3": {
+   "contradicts": {
+    "analyses": 5,
+    "independent_families": 2
+   },
+   "supports": {
+    "analyses": 43,
+    "independent_families": 20
+   }
+  },
+  "H8[H1+H4].g3": {
+   "contradicts": {
+    "analyses": 9,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 34,
+    "independent_families": 13
+   }
+  },
+  "H8[H1+H5].g3": {
+   "contradicts": {
+    "analyses": 11,
+    "independent_families": 5
+   },
+   "supports": {
+    "analyses": 32,
+    "independent_families": 12
+   }
+  },
+  "H8[H1+H6].g3": {
+   "contradicts": {
+    "analyses": 0,
+    "independent_families": 0
+   },
+   "supports": {
+    "analyses": 42,
+    "independent_families": 19
+   }
+  },
+  "H8[H1+H7].g3": {
+   "contradicts": {
+    "analyses": 4,
+    "independent_families": 3
+   },
+   "supports": {
+    "analyses": 31,
+    "independent_families": 11
+   }
+  },
+  "H8[H1+H9].g3": {
+   "contradicts": {
+    "analyses": 12,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 40,
+    "independent_families": 17
+   }
+  },
+  "H8[H2+H10].g3": {
+   "contradicts": {
+    "analyses": 8,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 39,
+    "independent_families": 18
+   }
+  },
+  "H8[H2+H3].g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 34,
+    "independent_families": 16
+   }
+  },
+  "H8[H2+H4].g3": {
+   "contradicts": {
+    "analyses": 17,
+    "independent_families": 8
+   },
+   "supports": {
+    "analyses": 19,
+    "independent_families": 9
+   }
+  },
+  "H8[H2+H5].g3": {
+   "contradicts": {
+    "analyses": 19,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 17,
+    "independent_families": 8
+   }
+  },
+  "H8[H2+H6].g3": {
+   "contradicts": {
+    "analyses": 19,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 22,
+    "independent_families": 10
+   }
+  },
+  "H8[H2+H7].g3": {
+   "contradicts": {
+    "analyses": 6,
+    "independent_families": 3
+   },
+   "supports": {
+    "analyses": 22,
+    "independent_families": 10
+   }
+  },
+  "H8[H2+H9].g3": {
+   "contradicts": {
+    "analyses": 20,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 32,
+    "independent_families": 15
+   }
+  },
+  "H8[H3+H10].g3": {
+   "contradicts": {
+    "analyses": 9,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 32,
+    "independent_families": 18
+   }
+  },
+  "H8[H3+H4].g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 28,
+    "independent_families": 16
+   }
+  },
+  "H8[H3+H5].g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 26,
+    "independent_families": 15
+   }
+  },
+  "H8[H3+H6].g3": {
+   "contradicts": {
+    "analyses": 9,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 34,
+    "independent_families": 16
+   }
+  },
+  "H8[H3+H7].g3": {
+   "contradicts": {
+    "analyses": 7,
+    "independent_families": 3
+   },
+   "supports": {
+    "analyses": 21,
+    "independent_families": 13
+   }
+  },
+  "H8[H3+H9].g3": {
+   "contradicts": {
+    "analyses": 14,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 38,
+    "independent_families": 18
+   }
+  },
+  "H8[H4+H10].g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 28,
+    "independent_families": 16
+   }
+  },
+  "H8[H4+H5].g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 10,
+    "independent_families": 5
+   }
+  },
+  "H8[H4+H6].g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 6
+   },
+   "supports": {
+    "analyses": 23,
+    "independent_families": 11
+   }
+  },
+  "H8[H4+H7].g3": {
+   "contradicts": {
+    "analyses": 11,
+    "independent_families": 5
+   },
+   "supports": {
+    "analyses": 5,
+    "independent_families": 3
+   }
+  },
+  "H8[H4+H9].g3": {
+   "contradicts": {
+    "analyses": 18,
+    "independent_families": 8
+   },
+   "supports": {
+    "analyses": 21,
+    "independent_families": 9
+   }
+  },
+  "H8[H5+H10].g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 26,
+    "independent_families": 15
+   }
+  },
+  "H8[H5+H6].g3": {
+   "contradicts": {
+    "analyses": 15,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 23,
+    "independent_families": 11
+   }
+  },
+  "H8[H5+H7].g3": {
+   "contradicts": {
+    "analyses": 11,
+    "independent_families": 5
+   },
+   "supports": {
+    "analyses": 5,
+    "independent_families": 3
+   }
+  },
+  "H8[H5+H9].g3": {
+   "contradicts": {
+    "analyses": 20,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 19,
+    "independent_families": 8
+   }
+  },
+  "H8[H6+H10].g3": {
+   "contradicts": {
+    "analyses": 4,
+    "independent_families": 2
+   },
+   "supports": {
+    "analyses": 39,
+    "independent_families": 18
+   }
+  },
+  "H8[H6+H7].g3": {
+   "contradicts": {
+    "analyses": 2,
+    "independent_families": 1
+   },
+   "supports": {
+    "analyses": 23,
+    "independent_families": 11
+   }
+  },
+  "H8[H6+H9].g3": {
+   "contradicts": {
+    "analyses": 20,
+    "independent_families": 9
+   },
+   "supports": {
+    "analyses": 26,
+    "independent_families": 12
+   }
+  },
+  "H8[H7+H10].g3": {
+   "contradicts": {
+    "analyses": 2,
+    "independent_families": 1
+   },
+   "supports": {
+    "analyses": 26,
+    "independent_families": 15
+   }
+  },
+  "H8[H7+H9].g3": {
+   "contradicts": {
+    "analyses": 13,
+    "independent_families": 7
+   },
+   "supports": {
+    "analyses": 23,
+    "independent_families": 9
+   }
+  },
+  "H8[H9+H10].g3": {
+   "contradicts": {
+    "analyses": 9,
+    "independent_families": 4
+   },
+   "supports": {
+    "analyses": 43,
+    "independent_families": 20
+   }
+  },
+  "H9.g3": {
+   "contradicts": {
+    "analyses": 23,
+    "independent_families": 12
+   },
+   "supports": {
+    "analyses": 29,
+    "independent_families": 12
+   }
+  }
+ }
+}

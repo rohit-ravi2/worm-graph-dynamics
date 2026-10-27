@@ -1,0 +1,13 @@
+{
+ "n_events": 221273,
+ "n_with_geometry": 215381,
+ "n_dataset_without_run1_animal": 4573,
+ "n_target_mismatch": 0,
+ "datasets_without_geometry": [
+  20,
+  23,
+  33
+ ],
+ "frac_dbox_lt_2p5": 0.2663,
+ "frac_dbox_lt_3p5": 0.428
+}

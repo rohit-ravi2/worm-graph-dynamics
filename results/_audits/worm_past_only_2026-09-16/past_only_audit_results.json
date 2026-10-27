@@ -1,0 +1,2029 @@
+{
+  "audit": "worm past-only lag re-audit 2026-09-16",
+  "frozen_sources_untouched": [
+    "results/empirical_sufficiency_mvp_v2detector/representation_results.json",
+    "results/empirical_sufficiency_mvp/representation_results.json",
+    "results/_capsules/worm_v1 (root 3fcdf169...)"
+  ],
+  "grids": {
+    "original": [
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "concurrent": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "past_only": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "representations": [
+    "panel|raw",
+    "panel|delay_h1",
+    "panel|delay_h2",
+    "panel|delay_h3",
+    "panel|delay_h5",
+    "panel|deriv",
+    "resid1|delay_h2",
+    "resid1|delay_h3",
+    "resid1|delay_h5",
+    "resid1|deriv",
+    "resid1|delay_h1",
+    "gmode3|delay_h3",
+    "gmode3|delay_h5"
+  ],
+  "pipeline": "wormlab.sufficiency.evaluate.evaluate_representation, detector_backend='v2', null_n=20, seed=0, make_outer_splits(k=5, seed=0); LAG_GRID monkeypatched in-process; stable-detector companion null (null_n=10) at the modal lag",
+  "signal_floor": 0.0045,
+  "decision_policy_source": "specs/worm_positive_temporal.json",
+  "rows": [
+    {
+      "grid": "original",
+      "space_id": "panel|raw",
+      "selected_lag_frames": [
+        -2,
+        4,
+        4,
+        1,
+        2
+      ],
+      "selected_lag_mode": 4,
+      "score": 0.4989,
+      "baseline_at_modal_lag": 0.5015,
+      "incremental": -0.0016,
+      "incremental_ci90": [
+        -0.0051,
+        0.002
+      ],
+      "nonlinear_incremental": -0.019,
+      "access_tag": "neither",
+      "v2_p_linear": 0.4286,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0018,
+      "v2_dual_above_null": false,
+      "stable_null_p95": -0.002,
+      "stable_above_null": false,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "unresolved_no_signal",
+      "failed_components_v2_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "unresolved_no_signal",
+      "failed_components_stable_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 23349,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -4,
+      "timing_s": {
+        "evaluate_representation_v2": 23.6,
+        "companion_and_profile": 7.1
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "panel|delay_h1",
+      "selected_lag_frames": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.5459,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0414,
+      "incremental_ci90": [
+        0.0351,
+        0.0488
+      ],
+      "nonlinear_incremental": 0.0676,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.004,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.004,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 44.7,
+        "companion_and_profile": 15.9
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "panel|delay_h2",
+      "selected_lag_frames": [
+        -1,
+        -2,
+        -2,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.5494,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0466,
+      "incremental_ci90": [
+        0.0391,
+        0.0546
+      ],
+      "nonlinear_incremental": 0.0813,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0061,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0063,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 63.2,
+        "companion_and_profile": 23.0
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "panel|delay_h3",
+      "selected_lag_frames": [
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ],
+      "selected_lag_mode": -2,
+      "score": 0.5544,
+      "baseline_at_modal_lag": 0.5005,
+      "incremental": 0.0526,
+      "incremental_ci90": [
+        0.0443,
+        0.0614
+      ],
+      "nonlinear_incremental": 0.0909,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0099,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0105,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 26451,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 2,
+      "timing_s": {
+        "evaluate_representation_v2": 81.9,
+        "companion_and_profile": 30.3
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "panel|delay_h5",
+      "selected_lag_frames": [
+        -2,
+        -2,
+        -2,
+        -2,
+        -2
+      ],
+      "selected_lag_mode": -2,
+      "score": 0.5536,
+      "baseline_at_modal_lag": 0.5005,
+      "incremental": 0.0531,
+      "incremental_ci90": [
+        0.0444,
+        0.0627
+      ],
+      "nonlinear_incremental": 0.0914,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0146,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0148,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 26451,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 2,
+      "timing_s": {
+        "evaluate_representation_v2": 123.8,
+        "companion_and_profile": 50.9
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "panel|deriv",
+      "selected_lag_frames": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.5458,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0413,
+      "incremental_ci90": [
+        0.035,
+        0.0488
+      ],
+      "nonlinear_incremental": 0.0676,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0027,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.003,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 41.3,
+        "companion_and_profile": 14.8
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "resid1|delay_h2",
+      "selected_lag_frames": [
+        -1,
+        -1,
+        -2,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.547,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0441,
+      "incremental_ci90": [
+        0.0373,
+        0.0517
+      ],
+      "nonlinear_incremental": 0.0757,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0055,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0059,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 59.0,
+        "companion_and_profile": 22.4
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "resid1|delay_h3",
+      "selected_lag_frames": [
+        -2,
+        -2,
+        -2,
+        -1,
+        -2
+      ],
+      "selected_lag_mode": -2,
+      "score": 0.5498,
+      "baseline_at_modal_lag": 0.5005,
+      "incremental": 0.0479,
+      "incremental_ci90": [
+        0.0401,
+        0.0568
+      ],
+      "nonlinear_incremental": 0.0838,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0091,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0092,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 26451,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 2,
+      "timing_s": {
+        "evaluate_representation_v2": 77.1,
+        "companion_and_profile": 29.2
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "resid1|delay_h5",
+      "selected_lag_frames": [
+        -3,
+        -2,
+        -2,
+        -2,
+        -2
+      ],
+      "selected_lag_mode": -2,
+      "score": 0.5483,
+      "baseline_at_modal_lag": 0.5005,
+      "incremental": 0.0488,
+      "incremental_ci90": [
+        0.0409,
+        0.0581
+      ],
+      "nonlinear_incremental": 0.0838,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0144,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0147,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 26451,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 2,
+      "timing_s": {
+        "evaluate_representation_v2": 130.3,
+        "companion_and_profile": 57.3
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "resid1|deriv",
+      "selected_lag_frames": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.5419,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0374,
+      "incremental_ci90": [
+        0.031,
+        0.0451
+      ],
+      "nonlinear_incremental": 0.0606,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0026,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0027,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 41.3,
+        "companion_and_profile": 14.9
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "resid1|delay_h1",
+      "selected_lag_frames": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "selected_lag_mode": -1,
+      "score": 0.542,
+      "baseline_at_modal_lag": 0.5045,
+      "incremental": 0.0375,
+      "incremental_ci90": [
+        0.0311,
+        0.0451
+      ],
+      "nonlinear_incremental": 0.0605,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0034,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0036,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 28060,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 1,
+      "timing_s": {
+        "evaluate_representation_v2": 46.0,
+        "companion_and_profile": 15.3
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "gmode3|delay_h3",
+      "selected_lag_frames": [
+        -2,
+        -2,
+        -2,
+        -2,
+        -2
+      ],
+      "selected_lag_mode": -2,
+      "score": 0.5399,
+      "baseline_at_modal_lag": 0.5005,
+      "incremental": 0.0394,
+      "incremental_ci90": [
+        0.0338,
+        0.0455
+      ],
+      "nonlinear_incremental": 0.0579,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0003,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0004,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 26451,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 2,
+      "timing_s": {
+        "evaluate_representation_v2": 16.2,
+        "companion_and_profile": 3.2
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "original",
+      "space_id": "gmode3|delay_h5",
+      "selected_lag_frames": [
+        -2,
+        -3,
+        -3,
+        -2,
+        -3
+      ],
+      "selected_lag_mode": -3,
+      "score": 0.5367,
+      "baseline_at_modal_lag": 0.4945,
+      "incremental": 0.0409,
+      "incremental_ci90": [
+        0.0349,
+        0.0474
+      ],
+      "nonlinear_incremental": 0.0613,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0007,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0008,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 24881,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 3,
+      "timing_s": {
+        "evaluate_representation_v2": 17.3,
+        "companion_and_profile": 3.6
+      },
+      "reproduces_frozen_v2": {
+        "selected_lag_frames": true,
+        "incremental": true,
+        "incremental_ci": true,
+        "score": true,
+        "nonlinear_incremental": true,
+        "p_linear": true,
+        "p_nonlinear": true,
+        "stable_null_p95_matches_original_stable_run": true
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|raw",
+      "selected_lag_frames": [
+        4,
+        4,
+        4,
+        1,
+        2
+      ],
+      "selected_lag_mode": 4,
+      "score": 0.4992,
+      "baseline_at_modal_lag": 0.5015,
+      "incremental": -0.0028,
+      "incremental_ci90": [
+        -0.0056,
+        -0.0003
+      ],
+      "nonlinear_incremental": -0.019,
+      "access_tag": "neither",
+      "v2_p_linear": 0.4286,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0018,
+      "v2_dual_above_null": false,
+      "stable_null_p95": -0.002,
+      "stable_above_null": false,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "unresolved_no_signal",
+      "failed_components_v2_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "unresolved_no_signal",
+      "failed_components_stable_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 23349,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -4,
+      "timing_s": {
+        "evaluate_representation_v2": 18.3,
+        "companion_and_profile": 6.5
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|delay_h1",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5133,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0151,
+      "incremental_ci90": [
+        0.0091,
+        0.0214
+      ],
+      "nonlinear_incremental": 0.0159,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.003,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0032,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 40.2,
+        "companion_and_profile": 16.5
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|delay_h2",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5152,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.017,
+      "incremental_ci90": [
+        0.0109,
+        0.0235
+      ],
+      "nonlinear_incremental": 0.0204,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0051,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.005,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 61.3,
+        "companion_and_profile": 27.1
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|delay_h3",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5143,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0161,
+      "incremental_ci90": [
+        0.0097,
+        0.0226
+      ],
+      "nonlinear_incremental": 0.0184,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0062,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.006,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 91.0,
+        "companion_and_profile": 37.1
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|delay_h5",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5104,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0122,
+      "incremental_ci90": [
+        0.0058,
+        0.0191
+      ],
+      "nonlinear_incremental": 0.0111,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0096,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.01,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 149.6,
+        "companion_and_profile": 64.4
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "panel|deriv",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5132,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.015,
+      "incremental_ci90": [
+        0.009,
+        0.0214
+      ],
+      "nonlinear_incremental": 0.0159,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0026,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0028,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 45.1,
+        "companion_and_profile": 17.6
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "resid1|delay_h2",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5133,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0151,
+      "incremental_ci90": [
+        0.0095,
+        0.0212
+      ],
+      "nonlinear_incremental": 0.0166,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0046,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0045,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 65.9,
+        "companion_and_profile": 27.8
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "resid1|delay_h3",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5126,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0144,
+      "incremental_ci90": [
+        0.0084,
+        0.0208
+      ],
+      "nonlinear_incremental": 0.0148,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0057,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0058,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 90.6,
+        "companion_and_profile": 38.0
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "resid1|delay_h5",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5087,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0105,
+      "incremental_ci90": [
+        0.004,
+        0.0172
+      ],
+      "nonlinear_incremental": 0.0078,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.009,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0092,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 164.8,
+        "companion_and_profile": 63.3
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "resid1|deriv",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5118,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0136,
+      "incremental_ci90": [
+        0.0079,
+        0.0196
+      ],
+      "nonlinear_incremental": 0.013,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0025,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0026,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 47.3,
+        "companion_and_profile": 19.7
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "resid1|delay_h1",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5117,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0135,
+      "incremental_ci90": [
+        0.008,
+        0.0193
+      ],
+      "nonlinear_incremental": 0.013,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0026,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0029,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 43.5,
+        "companion_and_profile": 15.1
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "gmode3|delay_h3",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5098,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0116,
+      "incremental_ci90": [
+        0.0086,
+        0.0146
+      ],
+      "nonlinear_incremental": 0.0084,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0004,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0004,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 14.4,
+        "companion_and_profile": 3.5
+      }
+    },
+    {
+      "grid": "concurrent",
+      "space_id": "gmode3|delay_h5",
+      "selected_lag_frames": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_lag_mode": 0,
+      "score": 0.5099,
+      "baseline_at_modal_lag": 0.4982,
+      "incremental": 0.0117,
+      "incremental_ci90": [
+        0.0087,
+        0.0147
+      ],
+      "nonlinear_incremental": 0.0083,
+      "access_tag": "both",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0004,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0005,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": true,
+      "guard_ci_lower_gt_floor": true,
+      "decision_label_v2_null": "positive_recoverability",
+      "failed_components_v2_null": [],
+      "decision_label_stable_null": "positive_recoverability",
+      "failed_components_stable_null": [],
+      "positive_predictive_gain": true,
+      "n_pairs_at_modal_lag": 29744,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": 0,
+      "timing_s": {
+        "evaluate_representation_v2": 15.0,
+        "companion_and_profile": 4.0
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|raw",
+      "selected_lag_frames": [
+        4,
+        4,
+        4,
+        1,
+        2
+      ],
+      "selected_lag_mode": 4,
+      "score": 0.4992,
+      "baseline_at_modal_lag": 0.5015,
+      "incremental": -0.0028,
+      "incremental_ci90": [
+        -0.0056,
+        -0.0003
+      ],
+      "nonlinear_incremental": -0.019,
+      "access_tag": "neither",
+      "v2_p_linear": 0.4286,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0018,
+      "v2_dual_above_null": false,
+      "stable_null_p95": -0.002,
+      "stable_above_null": false,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "unresolved_no_signal",
+      "failed_components_v2_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "unresolved_no_signal",
+      "failed_components_stable_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 23349,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -4,
+      "timing_s": {
+        "evaluate_representation_v2": 22.1,
+        "companion_and_profile": 8.5
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|delay_h1",
+      "selected_lag_frames": [
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5007,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0042,
+      "incremental_ci90": [
+        -0.0076,
+        -0.0012
+      ],
+      "nonlinear_incremental": -0.0132,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0033,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0034,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 46.1,
+        "companion_and_profile": 19.7
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|delay_h2",
+      "selected_lag_frames": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5032,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0018,
+      "incremental_ci90": [
+        -0.0044,
+        0.001
+      ],
+      "nonlinear_incremental": -0.0144,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0047,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.005,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 65.8,
+        "companion_and_profile": 25.2
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|delay_h3",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.502,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0015,
+      "incremental_ci90": [
+        -0.0043,
+        0.0013
+      ],
+      "nonlinear_incremental": -0.0168,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0071,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0065,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 86.3,
+        "companion_and_profile": 36.6
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|delay_h5",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.4988,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0048,
+      "incremental_ci90": [
+        -0.0078,
+        -0.0018
+      ],
+      "nonlinear_incremental": -0.0227,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0105,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0111,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 134.9,
+        "companion_and_profile": 50.1
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "panel|deriv",
+      "selected_lag_frames": [
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5006,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0044,
+      "incremental_ci90": [
+        -0.0077,
+        -0.0015
+      ],
+      "nonlinear_incremental": -0.0132,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0022,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.003,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 41.5,
+        "companion_and_profile": 17.3
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "resid1|delay_h2",
+      "selected_lag_frames": [
+        2,
+        1,
+        4,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5007,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0039,
+      "incremental_ci90": [
+        -0.0066,
+        -0.001
+      ],
+      "nonlinear_incremental": -0.0179,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0044,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0043,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 59.8,
+        "companion_and_profile": 25.9
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "resid1|delay_h3",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5008,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0028,
+      "incremental_ci90": [
+        -0.0055,
+        -0.0
+      ],
+      "nonlinear_incremental": -0.0205,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0063,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0061,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 81.8,
+        "companion_and_profile": 36.2
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "resid1|delay_h5",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.4944,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": -0.0068,
+      "incremental_ci90": [
+        -0.0095,
+        -0.0038
+      ],
+      "nonlinear_incremental": -0.026,
+      "access_tag": "neither",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0087,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0097,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 144.1,
+        "companion_and_profile": 47.8
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "resid1|deriv",
+      "selected_lag_frames": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "selected_lag_mode": 3,
+      "score": 0.4959,
+      "baseline_at_modal_lag": 0.5058,
+      "incremental": -0.0047,
+      "incremental_ci90": [
+        -0.0073,
+        -0.0022
+      ],
+      "nonlinear_incremental": -0.0222,
+      "access_tag": "neither",
+      "v2_p_linear": 0.6667,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0026,
+      "v2_dual_above_null": false,
+      "stable_null_p95": -0.0025,
+      "stable_above_null": false,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "unresolved_no_signal",
+      "failed_components_v2_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "unresolved_no_signal",
+      "failed_components_stable_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 24848,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -3,
+      "timing_s": {
+        "evaluate_representation_v2": 39.5,
+        "companion_and_profile": 16.5
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "resid1|delay_h1",
+      "selected_lag_frames": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "selected_lag_mode": 3,
+      "score": 0.4961,
+      "baseline_at_modal_lag": 0.5058,
+      "incremental": -0.0045,
+      "incremental_ci90": [
+        -0.0071,
+        -0.002
+      ],
+      "nonlinear_incremental": -0.0222,
+      "access_tag": "neither",
+      "v2_p_linear": 0.381,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0031,
+      "v2_dual_above_null": false,
+      "stable_null_p95": -0.0032,
+      "stable_above_null": false,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "unresolved_no_signal",
+      "failed_components_v2_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "unresolved_no_signal",
+      "failed_components_stable_null": [
+        "null_relative_difference",
+        "cross_unit_consistency",
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 24848,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -3,
+      "timing_s": {
+        "evaluate_representation_v2": 31.5,
+        "companion_and_profile": 10.8
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "gmode3|delay_h3",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5036,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": 0.0025,
+      "incremental_ci90": [
+        0.0007,
+        0.0043
+      ],
+      "nonlinear_incremental": -0.0094,
+      "access_tag": "linear_accessible",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0003,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0003,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 11.4,
+        "companion_and_profile": 3.1
+      }
+    },
+    {
+      "grid": "past_only",
+      "space_id": "gmode3|delay_h5",
+      "selected_lag_frames": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "selected_lag_mode": 1,
+      "score": 0.5036,
+      "baseline_at_modal_lag": 0.5036,
+      "incremental": 0.0024,
+      "incremental_ci90": [
+        0.0004,
+        0.0045
+      ],
+      "nonlinear_incremental": -0.0099,
+      "access_tag": "linear_accessible",
+      "v2_p_linear": 0.0476,
+      "v2_p_nonlinear": 0.0476,
+      "v2_linear_null_p95": -0.0004,
+      "v2_dual_above_null": true,
+      "stable_null_p95": -0.0004,
+      "stable_above_null": true,
+      "guard_incr_gt_floor": false,
+      "guard_ci_lower_gt_floor": false,
+      "decision_label_v2_null": "null_relative_difference_detected",
+      "failed_components_v2_null": [
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "decision_label_stable_null": "null_relative_difference_detected",
+      "failed_components_stable_null": [
+        "practical_estimability",
+        "positive_predictive_gain"
+      ],
+      "positive_predictive_gain": false,
+      "n_pairs_at_modal_lag": 28041,
+      "n_worms": 38,
+      "max_neural_frame_relative_to_target": -1,
+      "timing_s": {
+        "evaluate_representation_v2": 11.8,
+        "companion_and_profile": 3.3
+      }
+    }
+  ],
+  "temporal_history_compression": {
+    "original": {
+      "axis": "temporal_history",
+      "retention_threshold": 0.9,
+      "baseline_score": 0.5023,
+      "full_score": 0.5544,
+      "curve": [
+        {
+          "axis_value": 0,
+          "score": 0.4989,
+          "retention": -0.0653
+        },
+        {
+          "axis_value": 1,
+          "score": 0.5459,
+          "retention": 0.8369
+        },
+        {
+          "axis_value": 2,
+          "score": 0.5494,
+          "retention": 0.904
+        },
+        {
+          "axis_value": 3,
+          "score": 0.5544,
+          "retention": 1.0
+        },
+        {
+          "axis_value": 5,
+          "score": 0.5536,
+          "retention": 0.9846
+        }
+      ],
+      "min_sufficient_axis_value": 2,
+      "sufficiency_estimable": true,
+      "signal_floor": 0.0045,
+      "not_estimable_reason": null,
+      "claim_scope": "decoder-relative recoverability under grammar G (Ridge primary decoder)"
+    },
+    "concurrent": {
+      "axis": "temporal_history",
+      "retention_threshold": 0.9,
+      "baseline_score": 0.4989,
+      "full_score": 0.5152,
+      "curve": [
+        {
+          "axis_value": 0,
+          "score": 0.4992,
+          "retention": 0.0208
+        },
+        {
+          "axis_value": 1,
+          "score": 0.5133,
+          "retention": 0.8837
+        },
+        {
+          "axis_value": 2,
+          "score": 0.5152,
+          "retention": 1.0
+        },
+        {
+          "axis_value": 3,
+          "score": 0.5143,
+          "retention": 0.9449
+        },
+        {
+          "axis_value": 5,
+          "score": 0.5104,
+          "retention": 0.7062
+        }
+      ],
+      "min_sufficient_axis_value": 2,
+      "sufficiency_estimable": true,
+      "signal_floor": 0.0045,
+      "not_estimable_reason": null,
+      "claim_scope": "decoder-relative recoverability under grammar G (Ridge primary decoder)"
+    },
+    "past_only": {
+      "axis": "temporal_history",
+      "retention_threshold": 0.9,
+      "baseline_score": 0.5032,
+      "full_score": 0.5032,
+      "curve": [
+        {
+          "axis_value": 0,
+          "score": 0.4992,
+          "retention": -199.0
+        },
+        {
+          "axis_value": 1,
+          "score": 0.5007,
+          "retention": -124.0
+        },
+        {
+          "axis_value": 2,
+          "score": 0.5032,
+          "retention": 1.0
+        },
+        {
+          "axis_value": 3,
+          "score": 0.502,
+          "retention": -59.0
+        },
+        {
+          "axis_value": 5,
+          "score": 0.4988,
+          "retention": -219.0
+        }
+      ],
+      "min_sufficient_axis_value": null,
+      "sufficiency_estimable": false,
+      "signal_floor": 0.0045,
+      "not_estimable_reason": "temporal_history sufficiency: NOT ESTIMABLE -- full-space incremental signal below the declared floor (S_full-S_baseline=-0.0004 < 0.0045)",
+      "claim_scope": "decoder-relative recoverability under grammar G (Ridge primary decoder)"
+    }
+  }
+}

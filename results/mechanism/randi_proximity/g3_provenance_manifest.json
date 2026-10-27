@@ -1,0 +1,13 @@
+{
+ "addendum_sha256": "af91b9fa99005a511ae3a2556db0c246fb5fb769b8fe1d0da707d8ec35a9d12d",
+ "extractor": {
+  "module": "wormlab.mechanism.randi.provenance_traces",
+  "source_sha256": "582690431a6a3c4709041f67d1dbd5f3a17ceca5d50d4c08c975f551914b3b2d",
+  "version": "provenance_traces/1.0"
+ },
+ "generation": "g3",
+ "note": "Families, statistics and call rules are frozen separately (g3 preregistration) before any JUDGE access.",
+ "parent_manifest_sha256": "6c0626b1d77d0415a7a76396830ea7c4a3e3392cf27b2859b555ea0eed032004",
+ "partitions_reused": true,
+ "purpose": "signal-provenance campaign: continuous ROI traces + static mean volume"
+}

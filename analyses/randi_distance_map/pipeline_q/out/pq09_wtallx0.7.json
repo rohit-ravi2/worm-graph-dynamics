@@ -1,0 +1,165 @@
+{
+ "null": "wtallx0.7",
+ "cut2.5_A_geo": {
+  "all_far": {
+   "n_pairs": 311,
+   "n_survive_regime": 79,
+   "mean_survival_pairmatch": 0.2941,
+   "mean_survival_rand": 0.4917,
+   "n_p_leq_pstar_regime": 311,
+   "mean_p_survival_pairmatch": 1.0,
+   "mean_p_survival_rand": 0.5586
+  },
+  "minority_near": {
+   "n_pairs": 89,
+   "n_survive_regime": 12,
+   "mean_survival_pairmatch": 0.196,
+   "mean_survival_rand": 0.5092,
+   "n_p_leq_pstar_regime": 37,
+   "mean_p_survival_pairmatch": 0.4562,
+   "mean_p_survival_rand": 0.5384
+  },
+  "majority_near": {
+   "n_pairs": 172,
+   "n_survive_regime": 5,
+   "mean_survival_pairmatch": 0.0488,
+   "mean_survival_rand": 0.6035,
+   "n_p_leq_pstar_regime": 12,
+   "mean_p_survival_pairmatch": 0.1293,
+   "mean_p_survival_rand": 0.6298
+  },
+  "all_near": {
+   "n_pairs": 414,
+   "n_survive_regime": 0,
+   "mean_survival_pairmatch": 0.0,
+   "mean_survival_rand": 0.6286,
+   "n_p_leq_pstar_regime": 0,
+   "mean_p_survival_pairmatch": 0.0,
+   "mean_p_survival_rand": 0.6617
+  },
+  "n_sig_total": 986,
+  "median_frac_near_events": 0.836
+ },
+ "cut2.5_published": {
+  "all_far": {
+   "n_pairs": 270,
+   "n_survive_regime": 79,
+   "mean_survival_pairmatch": 0.3329,
+   "mean_survival_rand": 0.4424,
+   "n_p_leq_pstar_regime": 199,
+   "mean_p_survival_pairmatch": 0.737,
+   "mean_p_survival_rand": 0.469
+  },
+  "minority_near": {
+   "n_pairs": 109,
+   "n_survive_regime": 11,
+   "mean_survival_pairmatch": 0.164,
+   "mean_survival_rand": 0.3934,
+   "n_p_leq_pstar_regime": 34,
+   "mean_p_survival_pairmatch": 0.3842,
+   "mean_p_survival_rand": 0.4161
+  },
+  "majority_near": {
+   "n_pairs": 236,
+   "n_survive_regime": 7,
+   "mean_survival_pairmatch": 0.0402,
+   "mean_survival_rand": 0.4646,
+   "n_p_leq_pstar_regime": 14,
+   "mean_p_survival_pairmatch": 0.1073,
+   "mean_p_survival_rand": 0.4842
+  },
+  "all_near": {
+   "n_pairs": 521,
+   "n_survive_regime": 0,
+   "mean_survival_pairmatch": 0.0,
+   "mean_survival_rand": 0.5033,
+   "n_p_leq_pstar_regime": 0,
+   "mean_p_survival_pairmatch": 0.0,
+   "mean_p_survival_rand": 0.5271
+  },
+  "n_sig_total": 1136,
+  "median_frac_near_events": 0.9
+ },
+ "cut3.5_A_geo": {
+  "all_far": {
+   "n_pairs": 203,
+   "n_survive_regime": 32,
+   "mean_survival_pairmatch": 0.1669,
+   "mean_survival_rand": 0.2753,
+   "n_p_leq_pstar_regime": 203,
+   "mean_p_survival_pairmatch": 1.0,
+   "mean_p_survival_rand": 0.3722
+  },
+  "minority_near": {
+   "n_pairs": 76,
+   "n_survive_regime": 7,
+   "mean_survival_pairmatch": 0.0958,
+   "mean_survival_rand": 0.2926,
+   "n_p_leq_pstar_regime": 30,
+   "mean_p_survival_pairmatch": 0.4589,
+   "mean_p_survival_rand": 0.3516
+  },
+  "majority_near": {
+   "n_pairs": 115,
+   "n_survive_regime": 3,
+   "mean_survival_pairmatch": 0.0257,
+   "mean_survival_rand": 0.3245,
+   "n_p_leq_pstar_regime": 4,
+   "mean_p_survival_pairmatch": 0.0908,
+   "mean_p_survival_rand": 0.3708
+  },
+  "all_near": {
+   "n_pairs": 592,
+   "n_survive_regime": 0,
+   "mean_survival_pairmatch": 0.0,
+   "mean_survival_rand": 0.4289,
+   "n_p_leq_pstar_regime": 0,
+   "mean_p_survival_pairmatch": 0.0,
+   "mean_p_survival_rand": 0.4847
+  },
+  "n_sig_total": 986,
+  "median_frac_near_events": 1.0
+ },
+ "cut3.5_published": {
+  "all_far": {
+   "n_pairs": 177,
+   "n_survive_regime": 32,
+   "mean_survival_pairmatch": 0.1914,
+   "mean_survival_rand": 0.268,
+   "n_p_leq_pstar_regime": 134,
+   "mean_p_survival_pairmatch": 0.7571,
+   "mean_p_survival_rand": 0.3162
+  },
+  "minority_near": {
+   "n_pairs": 73,
+   "n_survive_regime": 7,
+   "mean_survival_pairmatch": 0.0921,
+   "mean_survival_rand": 0.269,
+   "n_p_leq_pstar_regime": 23,
+   "mean_p_survival_pairmatch": 0.4016,
+   "mean_p_survival_rand": 0.3025
+  },
+  "majority_near": {
+   "n_pairs": 138,
+   "n_survive_regime": 3,
+   "mean_survival_pairmatch": 0.0212,
+   "mean_survival_rand": 0.2728,
+   "n_p_leq_pstar_regime": 3,
+   "mean_p_survival_pairmatch": 0.0791,
+   "mean_p_survival_rand": 0.3125
+  },
+  "all_near": {
+   "n_pairs": 748,
+   "n_survive_regime": 0,
+   "mean_survival_pairmatch": 0.0,
+   "mean_survival_rand": 0.3488,
+   "n_p_leq_pstar_regime": 0,
+   "mean_p_survival_pairmatch": 0.0,
+   "mean_p_survival_rand": 0.3901
+  },
+  "n_sig_total": 1136,
+  "median_frac_near_events": 1.0
+ },
+ "frac_valid_offdiag_events_dbox_lt_2.5": 0.2612,
+ "frac_valid_offdiag_events_dbox_lt_3.5": 0.4273
+}

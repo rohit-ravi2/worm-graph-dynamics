@@ -1,0 +1,76 @@
+"""Extract event_crops/1.0 for one frozen partition (g3 unmixing). Same seal discipline as provenance_extract.py."""
+import hashlib, json, sys, time
+from concurrent.futures import ProcessPoolExecutor
+from wormlab.mechanism.randi import partitions, event_crops as EC
+
+ADDENDUM = partitions.BENCH_DIR / "g3_event_crops_manifest.json"
+
+
+def _sha(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        for c in iter(lambda: f.read(1 << 20), b""):
+            h.update(c)
+    return h.hexdigest()
+
+
+def freeze_addendum():
+    if ADDENDUM.exists():
+        raise FileExistsError(ADDENDUM)
+    m = partitions.load()
+    body = dict(generation="g3", purpose="evoked-volume unmixing: event-window pre/post voxel crops around each target",
+                extractor=dict(module="wormlab.mechanism.randi.event_crops", version=EC.VERSION, source_sha256=EC.source_sha256()),
+                parent_manifest_sha256=m["manifest_sha256"], partitions_reused=True,
+                reason=("synthetic fixture: an activity-dependent halo absent from the static image reproduces coupling-like T13/T16 "
+                        "signatures under pure contamination; voxel-level unmixing with a free radial halo is required"),
+                note="Families, statistics and call rules are frozen separately (g3 preregistration) before any JUDGE access.")
+    body["addendum_sha256"] = partitions.canonical_sha(body)
+    ADDENDUM.write_text(json.dumps(body, indent=1, sort_keys=True))
+    ADDENDUM.chmod(0o444)
+    return body
+
+
+def _one(args):
+    sub, payload, pseal, out = args
+    t0 = time.time()
+    if out.exists():
+        return dict(sub=sub, status="exists", sha256=_sha(out))
+    try:
+        if pseal is not None and _sha(payload) != pseal:
+            return dict(sub=sub, status="failed", error="source payload does not match raw_traces seal")
+        tmp = out.with_name(out.stem + ".tmp.npz")
+        EC.extract_animal(sub, payload, tmp)
+        tmp.replace(out)
+        return dict(sub=sub, status="ok", sha256=_sha(out), seconds=round(time.time() - t0, 1))
+    except Exception as e:
+        return dict(sub=sub, status="failed", error=repr(e))
+
+
+def main(part, workers=4):
+    add = json.loads(ADDENDUM.read_text())
+    assert add["extractor"]["source_sha256"] == EC.source_sha256(), "event_crops extractor changed since addendum freeze"
+    m = partitions.load()
+    sealed = part in ("CONFIRMATION", "RESERVE")
+    base = partitions.BENCH_DIR / (f"sealed/{part.lower()}" if sealed else part.lower())
+    seals = {}
+    if sealed:
+        for line in (base / "raw_traces" / "SEAL.jsonl").read_text().splitlines():
+            r = json.loads(line)
+            if r.get("status") in ("ok", "exists"):
+                seals[r["sub"]] = r["sha256"]
+    d = base / "event_crops"
+    d.mkdir(parents=True, exist_ok=True)
+    jobs = [(s, base / "raw_traces" / f"{s}.npz", seals.get(s) if sealed else None, d / f"{s}.npz") for s in m["partitions"][part]
+            if (base / "raw_traces" / f"{s}.npz").exists()]
+    with ProcessPoolExecutor(workers) as ex, open(d / "SEAL.jsonl", "a") as log:
+        for r in ex.map(_one, jobs):
+            r.update(partition=part, extractor_sha256=add["extractor"]["source_sha256"], addendum_sha256=add["addendum_sha256"])
+            log.write(json.dumps(r) + "\n"); log.flush()
+            print(r["sub"], r["status"], r.get("seconds"), r.get("error", ""), flush=True)
+
+
+if __name__ == "__main__":
+    if sys.argv[1] == "freeze":
+        print(json.dumps(freeze_addendum(), indent=1))
+    else:
+        main(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 4)

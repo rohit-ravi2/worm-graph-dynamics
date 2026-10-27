@@ -1,0 +1,193 @@
+{
+ "amends": {
+  "file": "results/mechanism/deep_campaign/g3_preregistration.json",
+  "reasons": [
+   "audit finding A9: policy 1.3 discarded strict dependence clusters mixing different tests (g1 H7 FALSIFIED -> NEUTRAL); policy 1.4 keeps one support and one contradiction per cluster",
+   "strict families: all-animal HISTORICAL looks no longer bridge disjoint held-out partitions",
+   "prediction audit extended to g0-g2 hypothesis predictions (adds H2/T6 invalid NECESSARY prediction)",
+   "reinterpretation capsules g0-g2 under 1.4 (tag audit2) produced before any g3 sealed access"
+  ],
+  "sealed_access_before_amendment": false,
+  "sha256": "8f66ba4b1ce6b7cdf5b2f2e22ed7c9c1f0f8e561995a2f9f48d1ed965ea4cea0"
+ },
+ "call_rules": {
+  "min_effect": {
+   "T13_optical_copy_subtracted_proximity": 0.03,
+   "T17_unmixed_proximity": 0.03,
+   "T18_unmixed_gap_topology": 0.03,
+   "T19_unmixed_spot_side": 0.03
+  },
+  "provenance_classifier_min_effect": {
+   "T13_optical_copy_subtracted_proximity": 0.03,
+   "T14_brightness_elasticity": 0.05,
+   "T16_spontaneous_excess": 0.5,
+   "T17_unmixed_proximity": 0.03,
+   "T20_axial_lateral_anisotropy": 0.03,
+   "T20u_axial_lateral_anisotropy_unmixed": 0.03,
+   "T6u_unmixed_target_flat": 0.03
+  },
+  "rule": "POS ci_lo>m; NEG ci_hi<-m; NULL inside [-m, m]; else INCONCLUSIVE"
+ },
+ "code_sha256": {
+  "src/wormlab/mechanism/adjudicator.py": "fd3f15ee84437d99127cc4ce233a356dbe8370fc07b5f842ce312a808671984f",
+  "src/wormlab/mechanism/engine.py": "083d63519f1e41bc742e5001df48ba8ce6c9dedc8050a20408f579ff977fbbda",
+  "src/wormlab/mechanism/evidence_graph.py": "853fa6f62a5950d6b7c26bb336177c43c89fd8ee84362139dd79ea1afc81af21",
+  "src/wormlab/mechanism/provenance_contrasts.py": "847911a71b81898a6a108237f31019b69d9c69a452aa8f7a454a406dc6162ff3",
+  "src/wormlab/mechanism/provenance_descriptives.py": "b5f03b2208d368e27ee33236e526d34da25e591b4360ceef1a0c47d46b51b08c",
+  "src/wormlab/mechanism/provenance_verdict.py": "c15bfec5e29c7f54444697b73e9d183823b98fc301abb65f4cf1f7a8b466e831",
+  "src/wormlab/mechanism/randi/benchmark_g3.py": "b3e20a772d7fb3ff04281f8a095eb31d24accb6bfc43883844609009bcb566b2",
+  "src/wormlab/mechanism/randi/provider_g3.py": "38360032fd3c540c6cdab7fe00759b3a700c3bbc737ab995854d6b9db31b706d",
+  "src/wormlab/mechanism/randi/run_g3.py": "5271d7c6e54e6ef113a5723af42fac3c0fa220adde44d65684d1bcbaf06c8696",
+  "src/wormlab/mechanism/roi_extract.py": "e90b6997878088499af66be086148993ab5b527c8d75cad5dce5a5e88439755c",
+  "src/wormlab/mechanism/signal_provenance.py": "1964d27a593aeef6e0a102f55f7728a37f170bb823f4ed3d6fde261c9d6961d9",
+  "src/wormlab/mechanism/spec.py": "8e2e81dd15a6609fc7b29bec03541963e789c356aceb39327991711edeed99b7",
+  "src/wormlab/mechanism/unmixing.py": "76b45a513e0e55b2a02fad0f1fae587ba53103fde7112d27261f90e824d8f645",
+  "src/wormlab/mechanism/waveform_provenance.py": "7c1ffec4aad3e4156ae2db6cbd219e791acb87823b5403e64d36d2ae9da7c786"
+ },
+ "decisions_influenced_by_discovery_scout": [
+  "calibrated synthetic battery v3 (real fitted PSF sigma, brightness spread, density, PSF tails, nucleus-size heterogeneity) added because the DISCOVERY static light model was much broader than battery v1/v2 optics (static statistics, not outcomes, set the calibration)",
+  "T20 axial-lateral anisotropy defined after the DISCOVERY P2 grid suggested axial dominance; battery v2 then showed T20 is POS whenever optics exist, so it is NOT adjudicated (descriptive only)",
+  "L/R homolog exclusion added to T20 (side-mounted worms: left-right = imaging axis)"
+ ],
+ "discovery_scout": {
+  "scout_core.json": "c19f0dbcc3d120e07e34068f7ce404e7bb15c75f3e1d5e97a672cbd656ed1aee",
+  "scout_core_r1.json": "c19f0dbcc3d120e07e34068f7ce404e7bb15c75f3e1d5e97a672cbd656ed1aee",
+  "scout_core_r2.json": "6fce1814fbc5b52ee847133bb77be2986c08842db88114092cc3485270da22c2",
+  "scout_core_r3.json": "c5027dc159819c076a89230ba2434af667fe05a576c9b923f1e916923e0a890b",
+  "scout_sensitivity.json": "0b380c6104a94a5077e263ce6544562f5faab476f2b514e974bfced838f7e3a6"
+ },
+ "frozen_utc": "2026-09-17T16:33:25.684149+00:00",
+ "hypotheses": {
+  "H1.g3": "60ba6e2c38ddb318b137d5bdeefe71612982843984cc56a914d69a77a5c4d3e4",
+  "H10.g3": "4dfef28be034acef6497f53402272da7b64cacecc58845329ef974d3dc704042",
+  "H2.g3": "1b236d072ee3b057fade3204dee6100cd75e3e2f67c7a8f734518de63d6c79b3",
+  "H3.g3": "a79e096a05b5948d73a3f8ed03a29b57e0fbf83c574b2c75b837bd0a93d72b3b",
+  "H4.g3": "65511a13fa9b3b85099ad3e12cd43fefa5909d5dea057941639cea59fc6eaa39",
+  "H5.g3": "acf35eb2b6428660bd587d0935f21058a9066bc36a05a1facc8c38d485698f88",
+  "H6.g3": "0b845c730d99a53c02bfd778ac82ae8a837d9d68928fd585e6adca7eb4897706",
+  "H7.g3": "16e187cf3f1d72868a4c1579c661c2017101a75a8fc4bdd6962b1b7b10c0bfc4",
+  "H9.g3": "f2eab243397a540cb858f66100e0345d1c135bb1e3515f6cc4bb089615e2f17b"
+ },
+ "invalid_predictions": [
+  [
+   "H1",
+   "T6_target_flat_nearfield"
+  ],
+  [
+   "H2",
+   "T6_target_flat_nearfield"
+  ],
+  [
+   "H10",
+   "T6_target_flat_nearfield"
+  ]
+ ],
+ "model_comparison_plan": {
+  "distance": "sum over statistics of (obs - model)^2 / (se_obs^2 + se_model^2), se from 95% bootstrap CI half-width / 1.96",
+  "held_out": "grid member selected by minimum distance on DISCOVERY; distance evaluated WITHOUT refit on CONFIRMATION and RESERVE; ranking by held-out distance + penalty",
+  "models": {
+   "contamination": [
+    "C_H1",
+    "C_HALO_010",
+    "C_HALO",
+    "C_HALO_035"
+   ],
+   "coupling_with_optics": [
+    "C_H3_c020",
+    "C_H3"
+   ],
+   "local_field_with_optics": [
+    "C_H10_a030",
+    "C_H10"
+   ],
+   "mixture": [
+    "C_MIX_h20_c20",
+    "C_MIX"
+   ],
+   "offtarget_with_optics": [
+    "C_H2_p040",
+    "C_H2"
+   ]
+  },
+  "note": "synthetic worlds are calibrated on static image statistics only; no parameter is fitted to a response outcome",
+  "penalty": "2 * number of free parameters in the family grid (contamination 1, coupling 1, offtarget 1, local_field 1, mixture 2)",
+  "summary_statistics": [
+   "T17 rd_box",
+   "T17 unmixed RD",
+   "T13 residual RD",
+   "T13 explained fraction",
+   "T20 box",
+   "T20u unmixed",
+   "T16 estimate",
+   "P6 ROI RD core/box/wide"
+  ]
+ },
+ "motivating_evidence": [
+  "g2_capsule:f3b8d753c38ee8de",
+  "synthetic_battery_v2:40e72bd1126e53fd",
+  "literature:BIOPHYSICAL_PARAMETERS.json:e67853e0ca804a44"
+ ],
+ "post_adjudication_exploratory": [
+  "all G3_REGISTRY statistics incl. T14/T20/T20u/T6u",
+  "T15",
+  "P1-P6",
+  "O1/O2/O4",
+  "E1/E2",
+  "H7/H10 spontaneous map",
+  "W2/W4/W5/W6/W7/W10"
+ ],
+ "prediction_audit_sha256": "53074dcc5919ee42ca855631ba6c4cf5e70d77940bae1ef2829495ce35b7b95d",
+ "purpose": "g3 Deep Mechanism Campaign preregistration: signal provenance + evoked unmixing judged on CONFIRMATION then RESERVE",
+ "run_config": {
+  "judge_all": true,
+  "judge_partitions": [
+   "CONFIRMATION",
+   "RESERVE"
+  ],
+  "mixture_share_tests": [
+   "T17_unmixed_proximity"
+  ],
+  "phenomenon_family_tests": [
+   "T17_unmixed_proximity",
+   "T13_optical_copy_subtracted_proximity"
+  ],
+  "phenomenon_test": "T0_proximity_effect",
+  "policy": "1.4",
+  "release_reserve_to_all": true,
+  "seed": 20260916
+ },
+ "synthetic_validation": {
+  "battery_report_v1.json": "e55002990bef5f47440f77913623144afe1805e9390479a39cf862994c125bf8",
+  "battery_report_v2.json": "40e72bd1126e53fd06cbb6defa5c38aa136acf01a3b25a6fa5e1a5d3b5456912",
+  "battery_report_v3.json": "4d8b77d8ce4e21a5d7172e6eb66a50875dd3a7bd006dd0df047a5357437e7f72",
+  "halo_basis_variants.json": "60d0a3bb72e434f8f8218c9399f7f8025634538c7bdd5cd988dab5f8226e4a4c"
+ },
+ "tests": {
+  "T13_optical_copy_subtracted_proximity": "d22d0034323375b050c3eb492f064a2d34063ffc4253b8749eddccc7b77a962b",
+  "T17_unmixed_proximity": "d13a1d8eecb63d397400b47a6668df988601cda5c93b7e46d98755ff041d7941",
+  "T18_unmixed_gap_topology": "6b05db50c68b6bcc953d53cd7525ab21ef80b9a48a22f5f797fc173af8edf04e",
+  "T19_unmixed_spot_side": "3b4cba1489ee12552529ec2e7f71a996248077b16fbc50883b844c51e7fc3ee4"
+ },
+ "tests_removed_before_judge": {
+  "T14_brightness_elasticity": "battery v1 false POS (B_CHEM) / no power",
+  "T20_axial_lateral_anisotropy": "battery v2: POS in all optics-containing worlds",
+  "T6u_unmixed_target_flat": "non-discriminating once H2.g3 carries ANY"
+ },
+ "unmixing": {
+  "halo_knots_um": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   8.0,
+   10.0,
+   13.0,
+   17.0
+  ],
+  "halo_mode": "both",
+  "offset": 100.0,
+  "selection": "synthetic only (halo_basis_variants.json)"
+ }
+}

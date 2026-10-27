@@ -1,0 +1,222 @@
+{
+ "dataset": "DANDI:001075",
+ "fields": {
+  "activity_halo": {
+   "note": "anisotropic halo not modelled",
+   "source": "unmixing.HALO_KNOTS_UM",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": "free radial basis 2-17 um around the target"
+  },
+  "animal_ids": {
+   "note": "",
+   "source": "DANDI:001075",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "DANDI subject ids"
+  },
+  "camera_offset_counts": {
+   "note": "",
+   "source": "wormdatamodel extract() docstring (Hamamatsu ORCA ~100 per pixel)",
+   "status": "ASSUMED",
+   "uncertainty": null,
+   "value": 100
+  },
+  "connectome": {
+   "note": "",
+   "source": "wormneuroatlas 0.0.7.3 package data",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "wormneuroatlas aconnectome_default (chem[i,j]=j->i; gap)"
+  },
+  "dandi_voxel_mask": {
+   "note": "deposited voxel masks carry a conversion bug (offsets added 3x)",
+   "source": "",
+   "status": "UNKNOWN",
+   "uncertainty": null,
+   "value": null
+  },
+  "frame_period_s": {
+   "note": "",
+   "source": "PumpProbeImagingGreen/timestamps diffs",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": 0.02
+  },
+  "green_segmentation": {
+   "note": "",
+   "source": "raw_traces.py _segment",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": "LoG nuclei on mean green volume"
+  },
+  "green_transform_dandi_to_raw": {
+   "note": "",
+   "source": "reextract/probe_target_dF.json: target dF 7.34 vs <=0.5 other transforms; validated 21/24 animals",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": {
+    "dx": 0,
+    "dy": 0,
+    "zflip": true
+   }
+  },
+  "label_transfer": {
+   "note": "",
+   "source": "raw_traces.py label transfer",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": "DANDI centroid (x, y, 24-z) within 2 px / 1 plane"
+  },
+  "leifer_extraction_box": {
+   "note": "",
+   "source": "catalystneuro session_to_box_shape.json (per session; 1x3x3 in 111 sessions)",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": [
+    3,
+    5,
+    5
+   ]
+  },
+  "optical_psf": {
+   "note": "",
+   "source": "signal_provenance.fit_light_model on the mean volume (isolated nuclei grid search)",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": "sigma scale sensitivity 0.8-1.5x; activity-dependent halo handled by unmixing",
+   "value": "anisotropic Gaussian (nucleus x PSF), shared sigma per animal"
+  },
+  "per_volume_roi_coordinates": {
+   "note": "114 reference neurons per animal; used for registration audit, not for extraction",
+   "source": "randi.leifer_osf (acquisition-order z converted; timestamp alignment)",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": "Leifer tracked coordinates (OSF exported_data_full brains.json)"
+  },
+  "plane_acquisition_times": {
+   "note": "",
+   "source": "PumpProbeImagingGreen/timestamps",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "per-frame timestamps"
+  },
+  "plane_ordering": {
+   "note": "",
+   "source": "depth_per_frame_in_um reversals",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "alternating up/down sweeps"
+  },
+  "raw_voxels": {
+   "note": "",
+   "source": "raw NWB",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "raw volumes"
+  },
+  "red_channel": {
+   "note": "",
+   "source": "raw NWB",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "raw PumpProbeImagingRed"
+  },
+  "red_registration_transform": {
+   "note": "VALIDATION FAILED (g1 scout, DISCOVERY): with the inferred transform the red box sits ~10 counts above offset (green ~58) with pre-stimulus red dF/F SD 0.21; an exhaustive translation search (z flip x dz +-3 x dy,dx +-40) finds no mapping that places raw-detected nuclei on tagRFP nuclei (best median ~3 counts above offset). g0 T5 outcomes were measured at unvalidated, near-background locations.",
+   "source": "",
+   "status": "UNKNOWN",
+   "uncertainty": null,
+   "value": null
+  },
+  "stimulation_axial_extent": {
+   "note": "beads, not tissue",
+   "source": "Randi 2023 Source Data via docs/mechanism_engine/deep_campaign/BIOPHYSICAL_PARAMETERS.json",
+   "status": "INFERRED_FROM_DATA",
+   "uncertainty": null,
+   "value": "2P FWHM 2.6 um axial (beads), 15-18% tail at 3-4 um"
+  },
+  "stimulation_coordinates": {
+   "note": "",
+   "source": "TargetPlaneSegmentation/pixel_mask",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "spot pixel (x, y) per stim"
+  },
+  "stimulation_depth": {
+   "note": "TargetPlaneSegmentation/depth_in_um values ~ -0.1..0.16 with undocumented semantics",
+   "source": "",
+   "status": "UNKNOWN",
+   "uncertainty": null,
+   "value": null
+  },
+  "stimulation_footprint": {
+   "note": "axial extent not reported",
+   "source": "Randi 2023 Extended Data Fig. 2c,d legend",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "3.1 um FWHM (lateral)"
+  },
+  "stimulation_power_W": {
+   "note": "",
+   "source": "stim table power (constant: power dependence untestable)",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": 0.0012
+  },
+  "stimulus_duration_s": {
+   "note": "",
+   "source": "stim table stop - start (WT)",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": 0.5
+  },
+  "stimulus_onset": {
+   "note": "",
+   "source": "intervals/OptogeneticStimulusTable",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "stim table start_time"
+  },
+  "unc31_positions": {
+   "note": "deposited; not used in g3",
+   "source": "OSF osf.io/e2syt",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": "OSF exported_data_full brains.json (unc-31 recordings)"
+  },
+  "volume_period_s": {
+   "note": "",
+   "source": "BaseGreenSignal timestamps",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": 0.5
+  },
+  "volume_shape": {
+   "note": "",
+   "source": "raw NWB PumpProbeImagingGreen shape / depth sweep length",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": [
+    25,
+    512,
+    512
+   ]
+  },
+  "xy_um_per_px": {
+   "note": "",
+   "source": "wormdatamodel recording.frameUmPerPixel code constant; not in NWB metadata",
+   "status": "ASSUMED",
+   "uncertainty": null,
+   "value": 0.42
+  },
+  "z_um_per_plane": {
+   "note": "",
+   "source": "median |diff(depth_per_frame_in_um)|",
+   "status": "KNOWN_FROM_METADATA",
+   "uncertainty": null,
+   "value": 1.22
+  }
+ },
+ "model_id": "randi2023_pumpprobe_v3",
+ "spec_hash": "c3aabd2cf51962f18ca9e35d7777aa7eeafdcaa4b96d1abb6a6e31273502ca11"
+}

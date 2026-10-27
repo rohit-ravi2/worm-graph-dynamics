@@ -1,0 +1,128 @@
+[
+ {
+  "disagreeing_pairs": [
+   [
+    "H10.g3",
+    "H7.g3"
+   ],
+   [
+    "H2.g3",
+    "H7.g3"
+   ],
+   [
+    "H3.g3",
+    "H7.g3"
+   ]
+  ],
+  "predictions": {
+   "H10.g3": "POS",
+   "H2.g3": "POS",
+   "H3.g3": "POS",
+   "H7.g3": "NULL"
+  },
+  "spec_hash": "d22d0034323375b050c3eb492f064a2d34063ffc4253b8749eddccc7b77a962b",
+  "test_id": "T13_optical_copy_subtracted_proximity"
+ },
+ {
+  "disagreeing_pairs": [
+   [
+    "H1.g3",
+    "H10.g3"
+   ],
+   [
+    "H1.g3",
+    "H2.g3"
+   ],
+   [
+    "H1.g3",
+    "H3.g3"
+   ],
+   [
+    "H1.g3",
+    "H6.g3"
+   ],
+   [
+    "H10.g3",
+    "H7.g3"
+   ],
+   [
+    "H2.g3",
+    "H7.g3"
+   ],
+   [
+    "H3.g3",
+    "H7.g3"
+   ],
+   [
+    "H6.g3",
+    "H7.g3"
+   ]
+  ],
+  "predictions": {
+   "H1.g3": "NULL",
+   "H10.g3": "POS",
+   "H2.g3": "POS",
+   "H3.g3": "POS",
+   "H6.g3": "POS",
+   "H7.g3": "NULL"
+  },
+  "spec_hash": "d13a1d8eecb63d397400b47a6668df988601cda5c93b7e46d98755ff041d7941",
+  "test_id": "T17_unmixed_proximity"
+ },
+ {
+  "disagreeing_pairs": [
+   [
+    "H10.g3",
+    "H3.g3"
+   ],
+   [
+    "H2.g3",
+    "H3.g3"
+   ]
+  ],
+  "predictions": {
+   "H10.g3": "NULL",
+   "H2.g3": "NULL",
+   "H3.g3": "POS"
+  },
+  "spec_hash": "6b05db50c68b6bcc953d53cd7525ab21ef80b9a48a22f5f797fc173af8edf04e",
+  "test_id": "T18_unmixed_gap_topology"
+ },
+ {
+  "disagreeing_pairs": [
+   [
+    "H1.g3",
+    "H2.g3"
+   ],
+   [
+    "H1.g3",
+    "H9.g3"
+   ],
+   [
+    "H10.g3",
+    "H2.g3"
+   ],
+   [
+    "H10.g3",
+    "H9.g3"
+   ],
+   [
+    "H2.g3",
+    "H3.g3"
+   ],
+   [
+    "H3.g3",
+    "H9.g3"
+   ]
+  ],
+  "predictions": {
+   "H1.g3": "NULL",
+   "H10.g3": "NULL",
+   "H2.g3": "POS",
+   "H3.g3": "NULL",
+   "H9.g3": "POS"
+  },
+  "spec_hash": "3b4cba1489ee12552529ec2e7f71a996248077b16fbc50883b844c51e7fc3ee4",
+  "test_id": "T19_unmixed_spot_side"
+ }
+]

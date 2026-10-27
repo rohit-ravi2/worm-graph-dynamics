@@ -1,0 +1,269 @@
+{
+  "grid_name": "past_only",
+  "lag_grid": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "space_id": "resid1|delay_h2",
+  "detector_backend": "v2",
+  "null_n_v2": 20,
+  "seed": 0,
+  "result_v2": {
+    "space_id": "resid1|delay_h2",
+    "transform": "delay",
+    "params": {
+      "source": "resid1",
+      "history": 2
+    },
+    "context": "within_forward",
+    "feature_dim": 150,
+    "temporal_support_s": 1.2,
+    "selected_lag_frames": [
+      2,
+      1,
+      4,
+      1,
+      1
+    ],
+    "selected_lag_mode": 1,
+    "score": 0.5007,
+    "baseline": 0.5036,
+    "incremental": -0.0039,
+    "ci": [
+      0.4706,
+      0.5278
+    ],
+    "incremental_ci": [
+      -0.0066,
+      -0.001
+    ],
+    "null_comparison": {
+      "backend": "discovery_v2_dual_confirmer",
+      "fdr_q": 0.1,
+      "linear_incremental_obs": -0.0015,
+      "nonlinear_incremental_obs": -0.0179,
+      "linear_null_p95": -0.0044,
+      "nonlinear_null_p95": -0.0247,
+      "p_linear": 0.0476,
+      "p_nonlinear": 0.0476,
+      "linear_above_null": true,
+      "nonlinear_above_null": true,
+      "dual_confirmed": true,
+      "above_null_p95": true,
+      "n_null": 20,
+      "confound_control": "self_past (behaviour-AR baseline) in both arms; global-mode/motion N/A (grammar-spanned / circular)"
+    },
+    "per_worm_scores": {
+      "sub-2023-01-13-07-SWF702": 0.7197,
+      "sub-2022-06-28-01-SWF702": 0.4637,
+      "sub-2023-01-09-22-SWF702": 0.5585,
+      "sub-2022-06-14-07-SWF702": 0.5974,
+      "sub-2022-07-15-12-SWF702": 0.6103,
+      "sub-2023-01-09-15-SWF702": 0.6657,
+      "sub-2022-07-20-01-SWF702": 0.5016,
+      "sub-2023-01-23-01-SWF702": 0.4358,
+      "sub-2023-01-10-14-SWF702": 0.5628,
+      "sub-2023-01-19-22-SWF702": 0.6035,
+      "sub-2023-01-16-08-SWF702": 0.602,
+      "sub-2022-06-14-01-SWF702": 0.5493,
+      "sub-2023-01-17-14-SWF702": 0.4412,
+      "sub-2023-01-23-08-SWF702": 0.5585,
+      "sub-2023-03-07-01-SWF702": 0.4571,
+      "sub-2023-01-09-08-SWF702": 0.48,
+      "sub-2022-06-28-07-SWF702": 0.5305,
+      "sub-2023-01-05-01-SWF702": 0.5858,
+      "sub-2023-01-16-15-SWF702": 0.4808,
+      "sub-2023-01-09-28-SWF702": 0.3956,
+      "sub-2023-01-10-07-SWF702": 0.3621,
+      "sub-2023-01-05-18-SWF702": 0.5644,
+      "sub-2022-07-15-06-SWF702": 0.4398,
+      "sub-2023-01-19-15-SWF702": 0.4827,
+      "sub-2022-12-21-06-SWF702": 0.6055,
+      "sub-2023-01-23-21-SWF702": 0.4818,
+      "sub-2023-01-17-01-SWF702": 0.373,
+      "sub-2023-01-23-15-SWF702": 0.3919,
+      "sub-2023-01-16-22-SWF702": 0.6569,
+      "sub-2023-01-19-08-SWF702": 0.3109,
+      "sub-2023-01-06-08-SWF702": 0.5127,
+      "sub-2022-06-14-13-SWF702": 0.4779,
+      "sub-2023-01-16-01-SWF702": 0.6054,
+      "sub-2023-01-17-07-SWF702": 0.3598,
+      "sub-2022-08-02-01-SWF702": 0.4886,
+      "sub-2022-07-26-01-SWF702": 0.3393,
+      "sub-2023-01-06-01-SWF702": 0.5143,
+      "sub-2023-01-18-01-SWF702": 0.26
+    },
+    "linear_incremental": -0.0039,
+    "nonlinear_incremental": -0.0179,
+    "access_tag": "neither",
+    "lineage": {
+      "fit_units": [
+        "sub-2022-06-14-01-SWF702",
+        "sub-2022-06-14-07-SWF702",
+        "sub-2022-06-14-13-SWF702",
+        "sub-2022-06-28-01-SWF702",
+        "sub-2022-06-28-07-SWF702",
+        "sub-2022-07-15-06-SWF702",
+        "sub-2022-07-15-12-SWF702",
+        "sub-2022-07-20-01-SWF702",
+        "sub-2022-07-26-01-SWF702",
+        "sub-2022-08-02-01-SWF702",
+        "sub-2022-12-21-06-SWF702",
+        "sub-2023-01-05-01-SWF702",
+        "sub-2023-01-05-18-SWF702",
+        "sub-2023-01-06-01-SWF702",
+        "sub-2023-01-06-08-SWF702",
+        "sub-2023-01-09-08-SWF702",
+        "sub-2023-01-09-15-SWF702",
+        "sub-2023-01-09-22-SWF702",
+        "sub-2023-01-09-28-SWF702",
+        "sub-2023-01-10-07-SWF702",
+        "sub-2023-01-10-14-SWF702",
+        "sub-2023-01-13-07-SWF702",
+        "sub-2023-01-16-01-SWF702",
+        "sub-2023-01-16-08-SWF702",
+        "sub-2023-01-16-15-SWF702",
+        "sub-2023-01-16-22-SWF702",
+        "sub-2023-01-17-01-SWF702",
+        "sub-2023-01-17-07-SWF702",
+        "sub-2023-01-17-14-SWF702",
+        "sub-2023-01-18-01-SWF702",
+        "sub-2023-01-19-08-SWF702",
+        "sub-2023-01-19-15-SWF702",
+        "sub-2023-01-19-22-SWF702",
+        "sub-2023-01-23-01-SWF702",
+        "sub-2023-01-23-08-SWF702",
+        "sub-2023-01-23-15-SWF702",
+        "sub-2023-01-23-21-SWF702",
+        "sub-2023-03-07-01-SWF702"
+      ],
+      "selected_units": [],
+      "evaluated_units": [
+        "sub-2022-06-14-01-SWF702",
+        "sub-2022-06-14-07-SWF702",
+        "sub-2022-06-14-13-SWF702",
+        "sub-2022-06-28-01-SWF702",
+        "sub-2022-06-28-07-SWF702",
+        "sub-2022-07-15-06-SWF702",
+        "sub-2022-07-15-12-SWF702",
+        "sub-2022-07-20-01-SWF702",
+        "sub-2022-07-26-01-SWF702",
+        "sub-2022-08-02-01-SWF702",
+        "sub-2022-12-21-06-SWF702",
+        "sub-2023-01-05-01-SWF702",
+        "sub-2023-01-05-18-SWF702",
+        "sub-2023-01-06-01-SWF702",
+        "sub-2023-01-06-08-SWF702",
+        "sub-2023-01-09-08-SWF702",
+        "sub-2023-01-09-15-SWF702",
+        "sub-2023-01-09-22-SWF702",
+        "sub-2023-01-09-28-SWF702",
+        "sub-2023-01-10-07-SWF702",
+        "sub-2023-01-10-14-SWF702",
+        "sub-2023-01-13-07-SWF702",
+        "sub-2023-01-16-01-SWF702",
+        "sub-2023-01-16-08-SWF702",
+        "sub-2023-01-16-15-SWF702",
+        "sub-2023-01-16-22-SWF702",
+        "sub-2023-01-17-01-SWF702",
+        "sub-2023-01-17-07-SWF702",
+        "sub-2023-01-17-14-SWF702",
+        "sub-2023-01-18-01-SWF702",
+        "sub-2023-01-19-08-SWF702",
+        "sub-2023-01-19-15-SWF702",
+        "sub-2023-01-19-22-SWF702",
+        "sub-2023-01-23-01-SWF702",
+        "sub-2023-01-23-08-SWF702",
+        "sub-2023-01-23-15-SWF702",
+        "sub-2023-01-23-21-SWF702",
+        "sub-2023-03-07-01-SWF702"
+      ],
+      "source_lineage": {
+        "pca_components": 1
+      },
+      "family_lineage": {}
+    },
+    "adjacent_claim_warning": "Decoder-relative recoverability under grammar G does not establish biological use, causal necessity, or the physical location of computation."
+  },
+  "stable_companion_at_modal_lag": {
+    "null_n": 10,
+    "incremental": -0.0015,
+    "incremental_ci": [
+      -0.0038,
+      0.0011
+    ],
+    "null_comparison": {
+      "null_incremental_mean": -0.0054,
+      "null_incremental_p95": -0.0043,
+      "above_null_p95": true,
+      "n_null": 10
+    },
+    "n_pairs": 28041,
+    "n_worms": 38
+  },
+  "descriptive_lag_profile_fast_ridge": {
+    "-5": {
+      "fast_incremental": 0.00137,
+      "n_pairs": 21936,
+      "n_worms": 38
+    },
+    "-4": {
+      "fast_incremental": 0.00642,
+      "n_pairs": 23375,
+      "n_worms": 38
+    },
+    "-3": {
+      "fast_incremental": 0.01167,
+      "n_pairs": 24881,
+      "n_worms": 38
+    },
+    "-2": {
+      "fast_incremental": 0.04215,
+      "n_pairs": 26451,
+      "n_worms": 38
+    },
+    "-1": {
+      "fast_incremental": 0.04447,
+      "n_pairs": 28060,
+      "n_worms": 38
+    },
+    "0": {
+      "fast_incremental": 0.01469,
+      "n_pairs": 29744,
+      "n_worms": 38
+    },
+    "1": {
+      "fast_incremental": -0.00162,
+      "n_pairs": 28041,
+      "n_worms": 38
+    },
+    "2": {
+      "fast_incremental": -0.00519,
+      "n_pairs": 26415,
+      "n_worms": 38
+    },
+    "3": {
+      "fast_incremental": -0.00587,
+      "n_pairs": 24848,
+      "n_worms": 38
+    },
+    "4": {
+      "fast_incremental": -0.0066,
+      "n_pairs": 23349,
+      "n_worms": 38
+    },
+    "5": {
+      "fast_incremental": -0.00628,
+      "n_pairs": 21916,
+      "n_worms": 38
+    }
+  },
+  "timing_s": {
+    "evaluate_representation_v2": 59.8,
+    "companion_and_profile": 25.9
+  },
+  "support_semantics": "feature at frame t spans frames t-h..t (delay_h, deriv h=1, raw h=0); target frame tp=t+lag; AR(3) baseline uses tgt[tp-1..tp-3]."
+}

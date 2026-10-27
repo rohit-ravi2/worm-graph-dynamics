@@ -1,0 +1,114 @@
+[
+ {
+  "min_conf": null,
+  "stratum": "all",
+  "n_pairs": 6261,
+  "n_near": 32524,
+  "n_far": 36602,
+  "rate_near": 0.0648,
+  "rate_far": 0.0219,
+  "ratio": 2.97,
+  "diff_ci": [
+   0.0392,
+   0.0466
+  ]
+ },
+ {
+  "min_conf": null,
+  "stratum": "funatlas_sig",
+  "n_pairs": 442,
+  "n_near": 6173,
+  "n_far": 2738,
+  "rate_near": 0.1126,
+  "rate_far": 0.0299,
+  "ratio": 3.76,
+  "diff_ci": [
+   0.0701,
+   0.0961
+  ]
+ },
+ {
+  "min_conf": 0.8,
+  "stratum": "all",
+  "n_pairs": 4810,
+  "n_near": 23436,
+  "n_far": 25698,
+  "rate_near": 0.0655,
+  "rate_far": 0.0226,
+  "ratio": 2.9,
+  "diff_ci": [
+   0.0385,
+   0.0475
+  ]
+ },
+ {
+  "min_conf": 0.8,
+  "stratum": "funatlas_sig",
+  "n_pairs": 363,
+  "n_near": 4662,
+  "n_far": 2119,
+  "rate_near": 0.1128,
+  "rate_far": 0.0316,
+  "ratio": 3.57,
+  "diff_ci": [
+   0.0662,
+   0.0985
+  ]
+ },
+ {
+  "min_conf": 0.9,
+  "stratum": "all",
+  "n_pairs": 3333,
+  "n_near": 15510,
+  "n_far": 16319,
+  "rate_near": 0.0595,
+  "rate_far": 0.0214,
+  "ratio": 2.78,
+  "diff_ci": [
+   0.0326,
+   0.0437
+  ]
+ },
+ {
+  "min_conf": 0.9,
+  "stratum": "funatlas_sig",
+  "n_pairs": 267,
+  "n_near": 3120,
+  "n_far": 1495,
+  "rate_near": 0.1026,
+  "rate_far": 0.0328,
+  "ratio": 3.13,
+  "diff_ci": [
+   0.0518,
+   0.0879
+  ]
+ },
+ {
+  "min_conf": 1.0,
+  "stratum": "all",
+  "n_pairs": 3038,
+  "n_near": 13520,
+  "n_far": 13867,
+  "rate_near": 0.0574,
+  "rate_far": 0.0211,
+  "ratio": 2.73,
+  "diff_ci": [
+   0.0306,
+   0.0429
+  ]
+ },
+ {
+  "min_conf": 1.0,
+  "stratum": "funatlas_sig",
+  "n_pairs": 240,
+  "n_near": 2632,
+  "n_far": 1256,
+  "rate_near": 0.0984,
+  "rate_far": 0.0279,
+  "ratio": 3.53,
+  "diff_ci": [
+   0.05,
+   0.0934
+  ]
+ }
+]

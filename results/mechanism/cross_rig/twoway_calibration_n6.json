@@ -1,0 +1,82 @@
+{
+ "pure_equal_brightness|spontaneous": {
+  "n_animals": 6,
+  "n_pairs": 137,
+  "oneway": 1.8019472758090147,
+  "twoway": 0.8626511703862897,
+  "twoway_ci": [
+   0.8067206505454897,
+   0.8997105843817385
+  ]
+ },
+ "pure_equal_brightness|evoked": {
+  "n_animals": 6,
+  "n_pairs": 137,
+  "oneway": 1.561829825782949,
+  "twoway": 0.9277550126910836,
+  "twoway_ci": [
+   0.825502350381755,
+   0.987043005806219
+  ]
+ },
+ "pure_hetero_brightness|spontaneous": {
+  "n_animals": 6,
+  "n_pairs": 21,
+  "oneway": 2.6662016391073426,
+  "twoway": 1.1709363921433693,
+  "twoway_ci": [
+   0.9763810725162495,
+   1.798847446270317
+  ]
+ },
+ "pure_hetero_brightness|evoked": {
+  "n_animals": 6,
+  "n_pairs": 21,
+  "oneway": 2.74703251093241,
+  "twoway": 0.981615309491624,
+  "twoway_ci": [
+   0.8313327990877846,
+   1.3716212820104596
+  ]
+ },
+ "realistic_misspecified|spontaneous": {
+  "n_animals": 6,
+  "n_pairs": 28,
+  "oneway": 3.5751308260413444,
+  "twoway": 2.202103885010791,
+  "twoway_ci": [
+   2.003819373680689,
+   2.5565984046485544
+  ]
+ },
+ "realistic_misspecified|evoked": {
+  "n_animals": 6,
+  "n_pairs": 28,
+  "oneway": 2.995885901031948,
+  "twoway": 1.9190053804940947,
+  "twoway_ci": [
+   1.7699296077669646,
+   1.982372381571442
+  ]
+ },
+ "coupling_C_H3|spontaneous": {
+  "n_animals": 6,
+  "n_pairs": 28,
+  "oneway": 9.85653441044543,
+  "twoway": 5.210317961280381,
+  "twoway_ci": [
+   2.460416405669351,
+   5.933404466216764
+  ]
+ },
+ "coupling_C_H3|evoked": {
+  "n_animals": 6,
+  "n_pairs": 28,
+  "oneway": 9.749039049093184,
+  "twoway": 4.303546119593095,
+  "twoway_ci": [
+   3.0989397266459364,
+   5.151739034362571
+  ]
+ }
+}

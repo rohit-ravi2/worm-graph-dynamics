@@ -1,0 +1,139 @@
+{
+ "proposals": [
+  {
+   "analysis": "mixed model: neighbour response ~ spot-neighbour distance + target response amplitude, random effects animal/pair; preregister contrast of the two slopes",
+   "assumptions": [
+    "spot displacement is calibrated in 3D",
+    "target activation measured independently"
+   ],
+   "controls": [
+    "displacement into empty space (no nucleus)",
+    "sham epochs",
+    "red channel"
+   ],
+   "cost": 2.0,
+   "decision_criterion": "spot-distance slope CI excludes 0 at fixed target response -> direct photostimulation component; target-amplitude slope only -> mediated/contamination",
+   "estimated_discrimination_value": 2.5,
+   "manipulation": "Stimulate a fixed target with the spot displaced laterally (0, 2, 4, 6 um) and axially (0, 3, 6 um) toward a matched neighbour; record target and neighbour at each displacement.",
+   "measurement": "neighbour response probability vs spot-neighbour distance, holding target activation measured",
+   "name": "spot_displacement_series",
+   "predicted_outcome_by_hypothesis": {
+    "H10.g3": null,
+    "H2.g3": "neighbour response rises as spot approaches neighbour even when target response falls",
+    "H3.g3": "neighbour response tracks target activation, not spot position",
+    "H6.g3": "neighbour response tracks target activation, not spot position",
+    "H9.g3": "artifact tracks spot position in BOTH green and red, including displacement into empty space"
+   },
+   "predictions": {
+    "DIRECT_CHEMICAL_SYNAPTIC_PROPAGATION": "neighbour response tracks target activation, not spot position",
+    "DIRECT_OFF_TARGET_PHOTOSTIMULATION": "neighbour response rises as spot approaches neighbour even when target response falls",
+    "EXTRASYNAPTIC_OR_NEUROPEPTIDERGIC_SIGNALING": "neighbour response tracks target activation, not spot position",
+    "GAP_JUNCTION_OR_LOCAL_ELECTRICAL_COUPLING": "neighbour response tracks target activation, not spot position",
+    "GLOBAL_OR_SHARED_STATE": "no spot-position dependence",
+    "H9": "artifact tracks spot position in BOTH green and red, including displacement into empty space",
+    "POLYSYNAPTIC_NETWORK_PROPAGATION": "neighbour response tracks target activation, not spot position",
+    "STATIC_MEASUREMENT_CONTAMINATION": "neighbour response tracks target activation, not spot position"
+   },
+   "resolution": "displacement step <= footprint FWHM/2 (~1.5 um lateral)",
+   "sample_structure": ">= 8 animals x >= 10 target/neighbour pairs x 5 displacements x 5 repeats",
+   "separated_pairs": [
+    [
+     "H2.g3",
+     "H3.g3"
+    ],
+    [
+     "H2.g3",
+     "H6.g3"
+    ],
+    [
+     "H2.g3",
+     "H9.g3"
+    ],
+    [
+     "H3.g3",
+     "H9.g3"
+    ],
+    [
+     "H6.g3",
+     "H9.g3"
+    ]
+   ],
+   "unresolved_hypotheses": [
+    "H2.g3",
+    "H3.g3",
+    "H6.g3",
+    "H9.g3",
+    "H10.g3"
+   ]
+  },
+  {
+   "analysis": "onset intervals with per-sample timestamps (engine T3 at high rate)",
+   "assumptions": [
+    "GCaMP rise detectable at 50 Hz"
+   ],
+   "controls": [
+    "plane-order reversal",
+    "sham epochs"
+   ],
+   "cost": 2.5,
+   "decision_criterion": "delay interval lower bound > 20 ms in most pairs -> propagation; within +/-20 ms -> simultaneous",
+   "estimated_discrimination_value": 2.4,
+   "manipulation": "Image only the target plane and one neighbour plane at >= 50 Hz during stimulation.",
+   "measurement": "receiver-minus-target onset delay at ~20 ms resolution",
+   "name": "fast_two_plane_imaging",
+   "predicted_outcome_by_hypothesis": {
+    "H10.g3": null,
+    "H2.g3": "delay ~ 0 (within 20 ms), independent waveform",
+    "H3.g3": "delay 5-100 ms",
+    "H6.g3": "not assumed",
+    "H9.g3": "blip coincident with the light only"
+   },
+   "predictions": {
+    "DIRECT_CHEMICAL_SYNAPTIC_PROPAGATION": "delay >= 200 ms",
+    "DIRECT_OFF_TARGET_PHOTOSTIMULATION": "delay ~ 0 (within 20 ms), independent waveform",
+    "EXTRASYNAPTIC_OR_NEUROPEPTIDERGIC_SIGNALING": "not assumed",
+    "GAP_JUNCTION_OR_LOCAL_ELECTRICAL_COUPLING": "delay 5-100 ms",
+    "GLOBAL_OR_SHARED_STATE": "no target-locked delay",
+    "H9": "blip coincident with the light only",
+    "POLYSYNAPTIC_NETWORK_PROPAGATION": "delay >= 500 ms",
+    "STATIC_MEASUREMENT_CONTAMINATION": "delay exactly 0 and identical waveform (including target noise)"
+   },
+   "resolution": "<= 20 ms per sample",
+   "sample_structure": ">= 8 animals x >= 30 responding target/neighbour pairs",
+   "separated_pairs": [
+    [
+     "H2.g3",
+     "H3.g3"
+    ],
+    [
+     "H2.g3",
+     "H6.g3"
+    ],
+    [
+     "H2.g3",
+     "H9.g3"
+    ],
+    [
+     "H3.g3",
+     "H6.g3"
+    ],
+    [
+     "H3.g3",
+     "H9.g3"
+    ],
+    [
+     "H6.g3",
+     "H9.g3"
+    ]
+   ],
+   "unresolved_hypotheses": [
+    "H2.g3",
+    "H3.g3",
+    "H6.g3",
+    "H9.g3",
+    "H10.g3"
+   ]
+  }
+ ],
+ "status": "PROPOSED"
+}

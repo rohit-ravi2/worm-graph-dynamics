@@ -1,0 +1,363 @@
+{
+ "H1.g3": {
+  "lineage_root": "H1",
+  "parents": [
+   "H1.g2"
+  ],
+  "seq": 70,
+  "spec_hash": "60ba6e2c38ddb318b137d5bdeefe71612982843984cc56a914d69a77a5c4d3e4"
+ },
+ "H10.g3": {
+  "lineage_root": "H3+H6",
+  "parents": [
+   "H3.g2",
+   "H6.g2"
+  ],
+  "seq": 78,
+  "spec_hash": "4dfef28be034acef6497f53402272da7b64cacecc58845329ef974d3dc704042"
+ },
+ "H2.g3": {
+  "lineage_root": "H2",
+  "parents": [
+   "H2.g2"
+  ],
+  "seq": 71,
+  "spec_hash": "1b236d072ee3b057fade3204dee6100cd75e3e2f67c7a8f734518de63d6c79b3"
+ },
+ "H3.g3": {
+  "lineage_root": "H3",
+  "parents": [
+   "H3.g2"
+  ],
+  "seq": 72,
+  "spec_hash": "a79e096a05b5948d73a3f8ed03a29b57e0fbf83c574b2c75b837bd0a93d72b3b"
+ },
+ "H4.g3": {
+  "lineage_root": "H4",
+  "parents": [
+   "H4.g2"
+  ],
+  "seq": 73,
+  "spec_hash": "65511a13fa9b3b85099ad3e12cd43fefa5909d5dea057941639cea59fc6eaa39"
+ },
+ "H5.g3": {
+  "lineage_root": "H5",
+  "parents": [
+   "H5.g2"
+  ],
+  "seq": 74,
+  "spec_hash": "acf35eb2b6428660bd587d0935f21058a9066bc36a05a1facc8c38d485698f88"
+ },
+ "H6.g3": {
+  "lineage_root": "H6",
+  "parents": [
+   "H6.g2"
+  ],
+  "seq": 75,
+  "spec_hash": "0b845c730d99a53c02bfd778ac82ae8a837d9d68928fd585e6adca7eb4897706"
+ },
+ "H7.g3": {
+  "lineage_root": "H7",
+  "parents": [
+   "H7.g2"
+  ],
+  "seq": 76,
+  "spec_hash": "16e187cf3f1d72868a4c1579c661c2017101a75a8fc4bdd6962b1b7b10c0bfc4"
+ },
+ "H8[H1+H10].g3": {
+  "lineage_root": "H8[H1+H10]",
+  "parents": [
+   "H8[H1+H10].g2"
+  ],
+  "seq": 86,
+  "spec_hash": "5b5b17124c59e99b2f4340ef5688157498809e855a392c5640275ff0f5868e21"
+ },
+ "H8[H1+H2].g3": {
+  "lineage_root": "H8[H1+H2]",
+  "parents": [
+   "H8[H1+H2].g2"
+  ],
+  "seq": 79,
+  "spec_hash": "d53db4af6cac92cf7bf8ac3346a553937459188a0c67aaa62b99209289c173be"
+ },
+ "H8[H1+H3].g3": {
+  "lineage_root": "H8[H1+H3]",
+  "parents": [
+   "H8[H1+H3].g2"
+  ],
+  "seq": 80,
+  "spec_hash": "886c60cbecf0ef813d793505af5de623636d6aa80432eaac80d266a1d54b980f"
+ },
+ "H8[H1+H4].g3": {
+  "lineage_root": "H8[H1+H4]",
+  "parents": [
+   "H8[H1+H4].g2"
+  ],
+  "seq": 81,
+  "spec_hash": "6cb0f923db7355a24be093c8154e25df594028297853687e43ba15f11fdb7f5a"
+ },
+ "H8[H1+H5].g3": {
+  "lineage_root": "H8[H1+H5]",
+  "parents": [
+   "H8[H1+H5].g2"
+  ],
+  "seq": 82,
+  "spec_hash": "a4b470940dd5cb4031fdaa03133f5c64f24717b7fa3e4138ab4a878b7af8c87d"
+ },
+ "H8[H1+H6].g3": {
+  "lineage_root": "H8[H1+H6]",
+  "parents": [
+   "H8[H1+H6].g2"
+  ],
+  "seq": 83,
+  "spec_hash": "62e4b5037d1f97dc13d306a47c704401d36767cde33a1be614cca11b360a2819"
+ },
+ "H8[H1+H7].g3": {
+  "lineage_root": "H8[H1+H7]",
+  "parents": [
+   "H8[H1+H7].g2"
+  ],
+  "seq": 84,
+  "spec_hash": "ea767eb1ef4b4dd609ad44e08308519322f69ee2140ba8e4379f50b4660e22aa"
+ },
+ "H8[H1+H9].g3": {
+  "lineage_root": "H8[H1+H9]",
+  "parents": [
+   "H8[H1+H9].g2"
+  ],
+  "seq": 85,
+  "spec_hash": "a5c8194caf4fcb3f2892ac8f9cc24a2bb50d2da1744c5792a406fa2b0ef17a18"
+ },
+ "H8[H2+H10].g3": {
+  "lineage_root": "H8[H2+H10]",
+  "parents": [
+   "H8[H2+H10].g2"
+  ],
+  "seq": 93,
+  "spec_hash": "9a317066f6f72a4f9f3aea7e24f2f50320612aef6b77217c12fe6dbf5a7fbef1"
+ },
+ "H8[H2+H3].g3": {
+  "lineage_root": "H8[H2+H3]",
+  "parents": [
+   "H8[H2+H3].g2"
+  ],
+  "seq": 87,
+  "spec_hash": "4bd3b6ab58b66062c761b8e65e5cc7060cb3400b8887a5d837078e47d7a4e582"
+ },
+ "H8[H2+H4].g3": {
+  "lineage_root": "H8[H2+H4]",
+  "parents": [
+   "H8[H2+H4].g2"
+  ],
+  "seq": 88,
+  "spec_hash": "e8c3aeac8363c0d6579d35fcc984024add10a369344c0aae67ea6e8a74b2e23c"
+ },
+ "H8[H2+H5].g3": {
+  "lineage_root": "H8[H2+H5]",
+  "parents": [
+   "H8[H2+H5].g2"
+  ],
+  "seq": 89,
+  "spec_hash": "0fc63d8317f9d0b50bfed1a330c73723217b3828de3e248cf581a15e37f3f9ce"
+ },
+ "H8[H2+H6].g3": {
+  "lineage_root": "H8[H2+H6]",
+  "parents": [
+   "H8[H2+H6].g2"
+  ],
+  "seq": 90,
+  "spec_hash": "43d7c87c941dc8086e912bf71aeb8ec1a46e4a7487c5657d6f0ed8374a43749e"
+ },
+ "H8[H2+H7].g3": {
+  "lineage_root": "H8[H2+H7]",
+  "parents": [
+   "H8[H2+H7].g2"
+  ],
+  "seq": 91,
+  "spec_hash": "146d5bd40ffda1edca9072bc42ad109e9dc463cb5dc15662ba48c76e2a3efae5"
+ },
+ "H8[H2+H9].g3": {
+  "lineage_root": "H8[H2+H9]",
+  "parents": [
+   "H8[H2+H9].g2"
+  ],
+  "seq": 92,
+  "spec_hash": "ea86a095d5a92215e8637e877d361a995f92f23f823b8ba91bdfa04f9b86b9ba"
+ },
+ "H8[H3+H10].g3": {
+  "lineage_root": "H8[H3+H10]",
+  "parents": [
+   "H8[H3+H10].g2"
+  ],
+  "seq": 99,
+  "spec_hash": "dd612d3f9334c47c777de0869bd07cd83bd8e61f8286f01b2134d6ca828ff667"
+ },
+ "H8[H3+H4].g3": {
+  "lineage_root": "H8[H3+H4]",
+  "parents": [
+   "H8[H3+H4].g2"
+  ],
+  "seq": 94,
+  "spec_hash": "053e16e16b322b4c71e512a0287e083211011e95294e5142920dbc1846e2347f"
+ },
+ "H8[H3+H5].g3": {
+  "lineage_root": "H8[H3+H5]",
+  "parents": [
+   "H8[H3+H5].g2"
+  ],
+  "seq": 95,
+  "spec_hash": "a308e72411c983bd614be81495b9f807a59a9839c5e8279d4735cbbe4e9e7b3d"
+ },
+ "H8[H3+H6].g3": {
+  "lineage_root": "H8[H3+H6]",
+  "parents": [
+   "H8[H3+H6].g2"
+  ],
+  "seq": 96,
+  "spec_hash": "28de82a7e38434067ade228da2a15dfc91ebc6a10ed290cb7134bf613494e94e"
+ },
+ "H8[H3+H7].g3": {
+  "lineage_root": "H8[H3+H7]",
+  "parents": [
+   "H8[H3+H7].g2"
+  ],
+  "seq": 97,
+  "spec_hash": "2d85afda2c2900f5c4f27324559738afac5efa5fc38f51b244bb4bba6ad83439"
+ },
+ "H8[H3+H9].g3": {
+  "lineage_root": "H8[H3+H9]",
+  "parents": [
+   "H8[H3+H9].g2"
+  ],
+  "seq": 98,
+  "spec_hash": "e89ae6afbd6defeebf37ef11989adb669f7df42507f8bad96fe8e0063a388989"
+ },
+ "H8[H4+H10].g3": {
+  "lineage_root": "H8[H4+H10]",
+  "parents": [
+   "H8[H4+H10].g2"
+  ],
+  "seq": 104,
+  "spec_hash": "38acdd028cd32ea35e4418cb438860a6dd97216089025c0c19584d65f27ed165"
+ },
+ "H8[H4+H5].g3": {
+  "lineage_root": "H8[H4+H5]",
+  "parents": [
+   "H8[H4+H5].g2"
+  ],
+  "seq": 100,
+  "spec_hash": "c95188bda787eba7e4d2d18f5485a5af1464487273d3fa4fd1ec99fe9a10301c"
+ },
+ "H8[H4+H6].g3": {
+  "lineage_root": "H8[H4+H6]",
+  "parents": [
+   "H8[H4+H6].g2"
+  ],
+  "seq": 101,
+  "spec_hash": "53a54d9482989d506aa1bdcf862c1c96a62c5b605af4d348efb3e850dd249df4"
+ },
+ "H8[H4+H7].g3": {
+  "lineage_root": "H8[H4+H7]",
+  "parents": [
+   "H8[H4+H7].g2"
+  ],
+  "seq": 102,
+  "spec_hash": "afa7db3fcf571278900acc92c2bd14b84472bd78ef4c07514217e59cfb5e8fd9"
+ },
+ "H8[H4+H9].g3": {
+  "lineage_root": "H8[H4+H9]",
+  "parents": [
+   "H8[H4+H9].g2"
+  ],
+  "seq": 103,
+  "spec_hash": "323363339c29f5d1ea92ad22a157ab3f4b8a34ad68312c33ec8dbae7af7453a6"
+ },
+ "H8[H5+H10].g3": {
+  "lineage_root": "H8[H5+H10]",
+  "parents": [
+   "H8[H5+H10].g2"
+  ],
+  "seq": 108,
+  "spec_hash": "5e70d8927f79f32c1a9990a766747e7ea593308bec0f7ae58eaa8e6e19137092"
+ },
+ "H8[H5+H6].g3": {
+  "lineage_root": "H8[H5+H6]",
+  "parents": [
+   "H8[H5+H6].g2"
+  ],
+  "seq": 105,
+  "spec_hash": "8b116f576b6676f0ec64d8e52d7da82a010d858b7354f3ab21ad228c8f22a499"
+ },
+ "H8[H5+H7].g3": {
+  "lineage_root": "H8[H5+H7]",
+  "parents": [
+   "H8[H5+H7].g2"
+  ],
+  "seq": 106,
+  "spec_hash": "fa85ce8be96ea2401e9a761bc9fe8ff60fbf7a2afd2a1dfa2d22f8250aa05318"
+ },
+ "H8[H5+H9].g3": {
+  "lineage_root": "H8[H5+H9]",
+  "parents": [
+   "H8[H5+H9].g2"
+  ],
+  "seq": 107,
+  "spec_hash": "2542a360bc5c0c37e6ccad652e6ddc0a7c7bdbcc87927bd37625fdbbbda36bd3"
+ },
+ "H8[H6+H10].g3": {
+  "lineage_root": "H8[H6+H10]",
+  "parents": [
+   "H8[H6+H10].g2"
+  ],
+  "seq": 111,
+  "spec_hash": "9a8fbe0e7fb7d76717f25ee971d8bde396a87ee7f55d5cf8776aee6e7d15d6da"
+ },
+ "H8[H6+H7].g3": {
+  "lineage_root": "H8[H6+H7]",
+  "parents": [
+   "H8[H6+H7].g2"
+  ],
+  "seq": 109,
+  "spec_hash": "070aa1070a19c3724c2d478f63dbfc5b78b2bb64cb968ae30394c91787721d44"
+ },
+ "H8[H6+H9].g3": {
+  "lineage_root": "H8[H6+H9]",
+  "parents": [
+   "H8[H6+H9].g2"
+  ],
+  "seq": 110,
+  "spec_hash": "e1bcc6ce286b7c6b206917870a8dde5271454b04518eee28d7edcec6cc5b7606"
+ },
+ "H8[H7+H10].g3": {
+  "lineage_root": "H8[H7+H10]",
+  "parents": [
+   "H8[H7+H10].g2"
+  ],
+  "seq": 113,
+  "spec_hash": "f2244912a4901a353d55d7df401c26842a23bf4bc12f2c95efb5acaedb042f3d"
+ },
+ "H8[H7+H9].g3": {
+  "lineage_root": "H8[H7+H9]",
+  "parents": [
+   "H8[H7+H9].g2"
+  ],
+  "seq": 112,
+  "spec_hash": "11a626db21c7ccdcf2531e13f37b53c4ec7ec104b9e4e7c46f93d5079e82a7f0"
+ },
+ "H8[H9+H10].g3": {
+  "lineage_root": "H8[H9+H10]",
+  "parents": [
+   "H8[H9+H10].g2"
+  ],
+  "seq": 114,
+  "spec_hash": "4df79a2e300dc2c67975f7170f6577565424f4f9bb70d5c3c6533236d0199c4c"
+ },
+ "H9.g3": {
+  "lineage_root": "H9",
+  "parents": [
+   "H9.g2"
+  ],
+  "seq": 77,
+  "spec_hash": "f2eab243397a540cb858f66100e0345d1c135bb1e3515f6cc4bb089615e2f17b"
+ }
+}

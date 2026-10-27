@@ -1,0 +1,20 @@
+[
+ {
+  "set": "spont",
+  "k": "0",
+  "sub": null,
+  "T": 1200,
+  "N": 87,
+  "n_cols_mask_from_dandi": 0,
+  "nan_frac": 0.0
+ },
+ {
+  "set": "spont",
+  "k": "1",
+  "sub": null,
+  "T": 1270,
+  "N": 94,
+  "n_cols_mask_from_dandi": 0,
+  "nan_frac": 0.0
+ }
+]

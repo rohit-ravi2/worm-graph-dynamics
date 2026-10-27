@@ -1,0 +1,31 @@
+{
+ "f0_logsd=0.0": [
+  {
+   "n": 22,
+   "alpha_over_kappa": 1.969229014653425,
+   "alpha_over_twoway": 1.197070001128134,
+   "var_ratio": 0.557898189748891
+  },
+  {
+   "n": 17,
+   "alpha_over_kappa": 1.5566783026631115,
+   "alpha_over_twoway": 0.8802011168645159,
+   "var_ratio": 0.8005791749791392
+  }
+ ],
+ "f0_logsd=1.1": [
+  {
+   "n": 3,
+   "alpha_over_kappa": 4.6458130743573225,
+   "alpha_over_twoway": 1.6903029103722835,
+   "var_ratio": 1.1442075307355428
+  },
+  {
+   "n": 5,
+   "alpha_over_kappa": 2.25702607049407,
+   "alpha_over_twoway": 1.059754612967412,
+   "var_ratio": 0.44589102364816113
+  }
+ ],
+ "_note": "scripts/cross_rig/alpha_bias_check.py output (2026-10-04); synthetic pure static-kernel contamination, 2 animals per brightness setting, 1646 volumes, spontaneous window"
+}

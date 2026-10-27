@@ -1,0 +1,128 @@
+{
+ "A_all": {
+  "floor": 0.0216,
+  "n_events": 179992,
+  "n_pairs": 20892,
+  "n_sig": 156,
+  "n_sources_scored": 68,
+  "auroc_neg_atlas_distance": [
+   0.8382,
+   0.7952,
+   0.876
+  ],
+  "auroc_connectome": [
+   0.6594,
+   0.6056,
+   0.7141
+  ],
+  "dist_minus_conn": [
+   0.1788,
+   0.1139,
+   0.2391
+  ],
+  "connectome_within_distance_terciles": [
+   {
+    "tercile": 0,
+    "n_pairs": 6965,
+    "sig_rate": 0.0019,
+    "auroc_conn": 0.7767
+   },
+   {
+    "tercile": 1,
+    "n_pairs": 6965,
+    "sig_rate": 0.004,
+    "auroc_conn": 0.5082
+   },
+   {
+    "tercile": 2,
+    "n_pairs": 6964,
+    "sig_rate": 0.0165,
+    "auroc_conn": 0.643
+   }
+  ]
+ },
+ "B_drop_dbox_lt_2.5": {
+  "floor": 0.0216,
+  "n_events": 133366,
+  "n_pairs": 17299,
+  "n_sig": 13,
+  "n_sources_scored": 7,
+  "auroc_neg_atlas_distance": [
+   0.4316,
+   0.1887,
+   0.6773
+  ],
+  "auroc_connectome": [
+   0.8108,
+   0.627,
+   0.959
+  ],
+  "dist_minus_conn": [
+   -0.3792,
+   -0.7065,
+   -0.0167
+  ],
+  "connectome_within_distance_terciles": [
+   {
+    "tercile": 0,
+    "n_pairs": 5767,
+    "sig_rate": 0.0017,
+    "auroc_conn": 0.8213
+   },
+   {
+    "tercile": 1,
+    "n_pairs": 5768,
+    "sig_rate": 0.0,
+    "auroc_conn": NaN
+   },
+   {
+    "tercile": 2,
+    "n_pairs": 5767,
+    "sig_rate": 0.0005,
+    "auroc_conn": 0.7576
+   }
+  ]
+ },
+ "C_drop_dbox_lt_3.5": {
+  "floor": 0.0216,
+  "n_events": 103099,
+  "n_pairs": 14098,
+  "n_sig": 10,
+  "n_sources_scored": 5,
+  "auroc_neg_atlas_distance": [
+   0.243,
+   0.1424,
+   0.3015
+  ],
+  "auroc_connectome": [
+   0.8429,
+   0.6911,
+   0.9906
+  ],
+  "dist_minus_conn": [
+   -0.5998,
+   -0.8018,
+   -0.3506
+  ],
+  "connectome_within_distance_terciles": [
+   {
+    "tercile": 0,
+    "n_pairs": 4700,
+    "sig_rate": 0.0021,
+    "auroc_conn": 0.8205
+   },
+   {
+    "tercile": 1,
+    "n_pairs": 4700,
+    "sig_rate": 0.0,
+    "auroc_conn": NaN
+   },
+   {
+    "tercile": 2,
+    "n_pairs": 4700,
+    "sig_rate": 0.0,
+    "auroc_conn": NaN
+   }
+  ]
+ }
+}

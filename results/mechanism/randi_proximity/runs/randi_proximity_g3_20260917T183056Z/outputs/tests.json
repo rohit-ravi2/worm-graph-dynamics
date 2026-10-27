@@ -1,0 +1,210 @@
+[
+ {
+  "confound_risk": 0.2,
+  "cost": 1.0,
+  "covariates": [],
+  "data_requirements": [
+   "provenance_traces/1.0",
+   "raw_voxels"
+  ],
+  "distinguishes": [
+   "H2",
+   "H3",
+   "H7",
+   "H10"
+  ],
+  "effect_metric": "risk difference",
+  "forbidden_leakage_paths": [
+   "confirmation/reserve outcomes -> specs",
+   "floors chosen after outcomes"
+  ],
+  "hostile_null": "static-kernel-only; fixture B_HALO shows halo contamination makes it POS",
+  "independence_unit": "animal",
+  "matching_variables": [],
+  "min_effect": 0.03,
+  "min_units": 5,
+  "multiple_testing_family": "randi_proximity_mechanism_g3",
+  "partition_policy": {
+   "judge": [
+    "CONFIRMATION",
+    "RESERVE"
+   ],
+   "scout": "DISCOVERY"
+  },
+  "preprocessing": [
+   "camera offset 100 (ASSUMED; differences are offset-free)",
+   "static light model on the mean volume (signal_provenance.fit_light_model)",
+   "event windows: base = samples before onset in [v-8, v); post = 0.25-6.5 s by per-sample acquisition time",
+   "response = robust z (per nucleus across events) > 3"
+  ],
+  "question": "Does the near-field response excess survive subtracting the optical copy predicted from the static image?",
+  "required_measurement_fields": [
+   "raw_voxels"
+  ],
+  "spec_hash": "d22d0034323375b050c3eb492f064a2d34063ffc4253b8749eddccc7b77a962b",
+  "statistic_family": "psf_kernel_sufficiency",
+  "statistical_model": "MH risk difference near (<6 um) vs far (15-40 um) of receiver response after subtracting kappa*dC_target, TARGET-UP events",
+  "stopping_rule": "single look per (partition, family, lineage); no re-query",
+  "test_id": "T13_optical_copy_subtracted_proximity",
+  "uncertainty_estimator": "animal-cluster bootstrap 95% percentile interval (400 resamples)",
+  "version": "1.0"
+ },
+ {
+  "confound_risk": 0.25,
+  "cost": 3.0,
+  "covariates": [],
+  "data_requirements": [
+   "event_crops/1.0",
+   "raw_voxels"
+  ],
+  "distinguishes": [
+   "H1",
+   "H2",
+   "H3",
+   "H6",
+   "H7",
+   "H10"
+  ],
+  "effect_metric": "risk difference",
+  "forbidden_leakage_paths": [
+   "confirmation/reserve outcomes -> specs",
+   "floors chosen after outcomes"
+  ],
+  "hostile_null": "fixtures B_H1, B_HALO, S14 (contamination) vs B_H2, B_H3, B_H10; identical-row box RD reported",
+  "independence_unit": "animal",
+  "matching_variables": [],
+  "min_effect": 0.03,
+  "min_units": 5,
+  "multiple_testing_family": "randi_proximity_mechanism_g3",
+  "partition_policy": {
+   "judge": [
+    "CONFIRMATION",
+    "RESERVE"
+   ],
+   "scout": "DISCOVERY"
+  },
+  "preprocessing": [
+   "camera offset 100 (ASSUMED; differences are offset-free)",
+   "static light model on the mean volume (signal_provenance.fit_light_model)",
+   "event windows: base = samples before onset in [v-8, v); post = 0.25-6.5 s by per-sample acquisition time",
+   "response = robust z (per nucleus across events) > 3"
+  ],
+  "question": "After unmixing each evoked volume into nucleus components plus a free radial target halo, do near receivers still respond more?",
+  "required_measurement_fields": [
+   "raw_voxels"
+  ],
+  "spec_hash": "d13a1d8eecb63d397400b47a6668df988601cda5c93b7e46d98755ff041d7941",
+  "statistic_family": "evoked_unmixing_proximity",
+  "statistical_model": "MH risk difference near (<6 um) vs mid (9-15 um) of unmixed receiver response, TARGET-UP (box z) events",
+  "stopping_rule": "single look per (partition, family, lineage); no re-query",
+  "test_id": "T17_unmixed_proximity",
+  "uncertainty_estimator": "animal-cluster bootstrap 95% percentile interval (400 resamples)",
+  "version": "1.0"
+ },
+ {
+  "confound_risk": 0.35,
+  "cost": 3.0,
+  "covariates": [],
+  "data_requirements": [
+   "event_crops/1.0",
+   "label_transfer",
+   "connectome",
+   "raw_voxels"
+  ],
+  "distinguishes": [
+   "H2",
+   "H3",
+   "H10"
+  ],
+  "effect_metric": "risk difference",
+  "forbidden_leakage_paths": [
+   "confirmation/reserve outcomes -> specs",
+   "floors chosen after outcomes"
+  ],
+  "hostile_null": "animal-cluster bootstrap",
+  "independence_unit": "animal",
+  "matching_variables": [],
+  "min_effect": 0.03,
+  "min_units": 5,
+  "multiple_testing_family": "randi_proximity_mechanism_g3",
+  "partition_policy": {
+   "judge": [
+    "CONFIRMATION",
+    "RESERVE"
+   ],
+   "scout": "DISCOVERY"
+  },
+  "preprocessing": [
+   "camera offset 100 (ASSUMED; differences are offset-free)",
+   "static light model on the mean volume (signal_provenance.fit_light_model)",
+   "event windows: base = samples before onset in [v-8, v); post = 0.25-6.5 s by per-sample acquisition time",
+   "response = robust z (per nucleus across events) > 3"
+  ],
+  "question": "At fixed distance, do gap-junction partners show more unmixed responses?",
+  "required_measurement_fields": [
+   "label_transfer",
+   "connectome",
+   "raw_voxels"
+  ],
+  "spec_hash": "6b05db50c68b6bcc953d53cd7525ab21ef80b9a48a22f5f797fc173af8edf04e",
+  "statistic_family": "topology_given_distance_unmixed",
+  "statistical_model": "MH risk difference gap-edge vs none, strata animal x 2-um bin (<= 15 um), labeled pairs, TARGET-UP",
+  "stopping_rule": "single look per (partition, family, lineage); no re-query",
+  "test_id": "T18_unmixed_gap_topology",
+  "uncertainty_estimator": "animal-cluster bootstrap 95% percentile interval (400 resamples)",
+  "version": "1.0"
+ },
+ {
+  "confound_risk": 0.45,
+  "cost": 3.0,
+  "covariates": [],
+  "data_requirements": [
+   "event_crops/1.0",
+   "stimulation_coordinates",
+   "raw_voxels"
+  ],
+  "distinguishes": [
+   "H1",
+   "H2",
+   "H3",
+   "H9",
+   "H10"
+  ],
+  "effect_metric": "risk difference",
+  "forbidden_leakage_paths": [
+   "confirmation/reserve outcomes -> specs",
+   "floors chosen after outcomes"
+  ],
+  "hostile_null": "animal-cluster bootstrap; offsets are small (weak test)",
+  "independence_unit": "animal",
+  "matching_variables": [],
+  "min_effect": 0.03,
+  "min_units": 5,
+  "multiple_testing_family": "randi_proximity_mechanism_g3",
+  "partition_policy": {
+   "judge": [
+    "CONFIRMATION",
+    "RESERVE"
+   ],
+   "scout": "DISCOVERY"
+  },
+  "preprocessing": [
+   "camera offset 100 (ASSUMED; differences are offset-free)",
+   "static light model on the mean volume (signal_provenance.fit_light_model)",
+   "event windows: base = samples before onset in [v-8, v); post = 0.25-6.5 s by per-sample acquisition time",
+   "response = robust z (per nucleus across events) > 3"
+  ],
+  "question": "Do near receivers on the spot-offset side show more unmixed responses?",
+  "required_measurement_fields": [
+   "stimulation_coordinates",
+   "raw_voxels"
+  ],
+  "spec_hash": "3b4cba1489ee12552529ec2e7f71a996248077b16fbc50883b844c51e7fc3ee4",
+  "statistic_family": "spot_offset_directionality_unmixed",
+  "statistical_model": "MH risk difference cos>0.5 vs cos<-0.5, offsets >= 1 px, strata animal x 2-um bin (< 8 um)",
+  "stopping_rule": "single look per (partition, family, lineage); no re-query",
+  "test_id": "T19_unmixed_spot_side",
+  "uncertainty_estimator": "animal-cluster bootstrap 95% percentile interval (400 resamples)",
+  "version": "1.0"
+ }
+]

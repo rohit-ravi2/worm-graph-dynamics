@@ -1,0 +1,17 @@
+{
+ "CONFIRMATION": {
+  "event_crops": 40,
+  "expected": 40,
+  "provenance": 40
+ },
+ "DISCOVERY": {
+  "event_crops": 24,
+  "expected": 24,
+  "provenance": 24
+ },
+ "RESERVE": {
+  "event_crops": 46,
+  "expected": 46,
+  "provenance": 46
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "family": "copy_ratio_twoway",
+ "grade": "EXPLORATORY (W residuals viewed post-adjudication in g3)",
+ "partitions": [
+  "CONFIRMATION",
+  "RESERVE"
+ ],
+ "estimator": {
+  "file": "scripts/cross_rig/alpha_twoway_real.py",
+  "sha256": "796a971a3ae560ee4831c02c50beb152980036f8db093753d692cc6be9324485"
+ },
+ "runner_sha256": "55ed5b876cd5ef08db4c2eba8f61979ab57527ab4f3ccdbfcc8f7e5bd03314ec",
+ "calibration": "twoway_calibration_n6.json",
+ "discovery_result": {
+  "spontaneous": {
+   "n_pairs": 665,
+   "n_animals": 24,
+   "alpha_over_kappa_oneway": 2.1845867499074543,
+   "ci_oneway": [
+    1.1464169974079643,
+    2.7875495954616345
+   ],
+   "alpha_over_twoway": 1.1966425914470045,
+   "ci_twoway": [
+    0.5686589023202226,
+    1.588998003595227
+   ]
+  },
+  "pre": {
+   "n_pairs": 665,
+   "n_animals": 24,
+   "alpha_over_kappa_oneway": 1.970086371568663,
+   "ci_oneway": [
+    0.775463795273178,
+    2.528909680560321
+   ],
+   "alpha_over_twoway": 1.0159559403431675,
+   "ci_twoway": [
+    0.4720827144899402,
+    1.4679278758748797
+   ]
+  },
+  "evoked": {
+   "n_pairs": 665,
+   "n_animals": 24,
+   "alpha_over_kappa_oneway": 1.9593195872613152,
+   "ci_oneway": [
+    1.1387661602964863,
+    2.868411683246898
+   ],
+   "alpha_over_twoway": 1.1130405480024732,
+   "ci_twoway": [
+    0.6112909186529931,
+    1.5466478997250228
+   ]
+  },
+  "post_quiet": {
+   "n_pairs": 665,
+   "n_animals": 24,
+   "alpha_over_kappa_oneway": 1.9942172856260063,
+   "ci_oneway": [
+    1.0191731126255115,
+    2.8150853612063025
+   ],
+   "alpha_over_twoway": 1.1414772286680621,
+   "ci_twoway": [
+    0.4928776167581039,
+    1.531803819425622
+   ]
+  }
+ },
+ "decision_rule": "REPLICATES iff in all four windows the median two-way ratio is in [0.7, 1.4] and its animal-bootstrap 95% CI contains 1",
+ "frozen_utc": "2026-10-04T16:25:39.815671+00:00"
+}

@@ -1,0 +1,348 @@
+{
+ "script_sha256": "7a28abfd34dc2825d5b6e912231a17497d0f5416e2dcdcff14b1485c46adcb29",
+ "stats": [
+  [
+   "T17_unmixed_proximity",
+   "rd_box",
+   "rd_box_ci"
+  ],
+  [
+   "T17_unmixed_proximity",
+   "estimate",
+   "ci"
+  ],
+  [
+   "T13_optical_copy_subtracted_proximity",
+   "rd_raw",
+   "rd_raw_ci"
+  ],
+  [
+   "T13_optical_copy_subtracted_proximity",
+   "estimate",
+   "ci"
+  ],
+  [
+   "T13_optical_copy_subtracted_proximity",
+   "explained_fraction",
+   "explained_fraction_ci"
+  ],
+  [
+   "T20_axial_lateral_anisotropy",
+   "estimate",
+   "ci"
+  ],
+  [
+   "T20u_axial_lateral_anisotropy_unmixed",
+   "estimate",
+   "ci"
+  ],
+  [
+   "T16_spontaneous_excess",
+   "estimate",
+   "ci"
+  ],
+  [
+   "P6",
+   "core",
+   "rd"
+  ],
+  [
+   "P6",
+   "box",
+   "rd"
+  ],
+  [
+   "P6",
+   "wide",
+   "rd"
+  ]
+ ],
+ "families": {
+  "contamination": {
+   "members": [
+    "C_H1",
+    "C_HALO_010",
+    "C_HALO",
+    "C_HALO_035",
+    "C_H1_neurite_halo",
+    "C_H1_motion",
+    "C_H1_segjitter"
+   ],
+   "discovery_distance": {
+    "C_H1": [
+     39.03940579859949,
+     11
+    ],
+    "C_HALO_010": [
+     129.53134282568556,
+     8
+    ],
+    "C_HALO": [
+     122.59590209657156,
+     11
+    ],
+    "C_HALO_035": [
+     109.65935104670385,
+     8
+    ],
+    "C_H1_neurite_halo": [
+     58.12955689147923,
+     11
+    ],
+    "C_H1_motion": [
+     70.0378645809086,
+     8
+    ],
+    "C_H1_segjitter": [
+     53.25239868487438,
+     8
+    ]
+   },
+   "selected": "C_H1",
+   "penalty": 2,
+   "selected_signature": [
+    0.1662887672397124,
+    -0.0004649714208825241,
+    0.21937575648955623,
+    0.16125188900699874,
+    0.2649511888307703,
+    0.08399567148980377,
+    0.011085153188217355,
+    3.41200920344723,
+    0.1524309907130692,
+    0.2199460136893859,
+    0.2479674796747967
+   ],
+   "heldout_CONFIRMATION": {
+    "distance": 90.63659944297709,
+    "n_stats": 11,
+    "penalised": 92.63659944297709
+   },
+   "heldout_RESERVE": {
+    "distance": 119.21403792728329,
+    "n_stats": 11,
+    "penalised": 121.21403792728329
+   }
+  },
+  "coupling_with_optics": {
+   "members": [
+    "C_H3_c020",
+    "C_H3"
+   ],
+   "discovery_distance": {
+    "C_H3_c020": [
+     63.021587262719365,
+     8
+    ],
+    "C_H3": [
+     84.44757027129353,
+     11
+    ]
+   },
+   "selected": "C_H3_c020",
+   "penalty": 2,
+   "selected_signature": [
+    0.15012950991627122,
+    -0.0012221820040442546,
+    0.12937848317681463,
+    0.09207506003419336,
+    0.2883278751354712,
+    0.12303286286957703,
+    -0.01231552246806552,
+    5.9544275355124014,
+    NaN,
+    NaN,
+    NaN
+   ],
+   "heldout_CONFIRMATION": {
+    "distance": 187.54452470847133,
+    "n_stats": 8,
+    "penalised": 189.54452470847133
+   },
+   "heldout_RESERVE": {
+    "distance": 271.6471245116057,
+    "n_stats": 8,
+    "penalised": 273.6471245116057
+   }
+  },
+  "offtarget_with_optics": {
+   "members": [
+    "C_H2_p040",
+    "C_H2"
+   ],
+   "discovery_distance": {
+    "C_H2_p040": [
+     56.30249162711809,
+     8
+    ],
+    "C_H2": [
+     18.60143201960052,
+     11
+    ]
+   },
+   "selected": "C_H2",
+   "penalty": 2,
+   "selected_signature": [
+    0.24935511027857546,
+    0.063259052730183,
+    0.1662047214127302,
+    0.10575500710012523,
+    0.36370636043781446,
+    -0.010802897187787278,
+    -0.14078176786765612,
+    2.5225665332945972,
+    0.14805312895788003,
+    0.16271555223589773,
+    0.17745916279673954
+   ],
+   "heldout_CONFIRMATION": {
+    "distance": 43.18758669427773,
+    "n_stats": 11,
+    "penalised": 45.18758669427773
+   },
+   "heldout_RESERVE": {
+    "distance": 60.08287592983951,
+    "n_stats": 11,
+    "penalised": 62.08287592983951
+   }
+  },
+  "local_field_with_optics": {
+   "members": [
+    "C_H10_a030",
+    "C_H10"
+   ],
+   "discovery_distance": {
+    "C_H10_a030": [
+     288.18942697602665,
+     8
+    ],
+    "C_H10": [
+     581.3412246979132,
+     11
+    ]
+   },
+   "selected": "C_H10_a030",
+   "penalty": 2,
+   "selected_signature": [
+    0.43015903391343074,
+    0.15848319440916686,
+    0.4925010579387284,
+    0.46406571088173965,
+    0.057736621269403154,
+    0.1549301753779881,
+    -0.06854098918286228,
+    4.866109475988365,
+    NaN,
+    NaN,
+    NaN
+   ],
+   "heldout_CONFIRMATION": {
+    "distance": 367.14012152344253,
+    "n_stats": 8,
+    "penalised": 369.14012152344253
+   },
+   "heldout_RESERVE": {
+    "distance": 418.09452136098855,
+    "n_stats": 8,
+    "penalised": 420.09452136098855
+   }
+  },
+  "mixture": {
+   "members": [
+    "C_MIX_h20_c20",
+    "C_MIX"
+   ],
+   "discovery_distance": {
+    "C_MIX_h20_c20": [
+     84.05425711513936,
+     8
+    ],
+    "C_MIX": [
+     60.106073827969226,
+     11
+    ]
+   },
+   "selected": "C_MIX",
+   "penalty": 4,
+   "selected_signature": [
+    0.192432507283963,
+    0.08278842411904147,
+    0.22561993516381162,
+    0.21182924058809086,
+    0.06112356412879927,
+    0.039300355129612295,
+    -0.2213038830055997,
+    4.732383974994007,
+    0.21530515910479256,
+    0.22446826234242237,
+    0.2478401256654158
+   ],
+   "heldout_CONFIRMATION": {
+    "distance": 95.75041616158346,
+    "n_stats": 11,
+    "penalised": 99.75041616158346
+   },
+   "heldout_RESERVE": {
+    "distance": 121.68068906695306,
+    "n_stats": 11,
+    "penalised": 125.68068906695306
+   }
+  }
+ },
+ "observed": {
+  "DISCOVERY": [
+   0.0752486346706181,
+   0.07382041233518466,
+   0.1238312955665356,
+   0.08775589420861772,
+   0.29132701222958834,
+   0.04991353458450001,
+   -0.0016387799332957115,
+   0.30672163193585433,
+   0.0736945262358612,
+   0.11732623243895161,
+   0.15052116244501013
+  ],
+  "CONFIRMATION": [
+   0.10275798068770872,
+   0.06409032515733912,
+   0.08627506895264139,
+   0.08047988669044988,
+   0.06717099542826954,
+   0.013227165658076792,
+   -0.041032648507031894,
+   -0.1615354263316441,
+   0.0765273013812923,
+   0.08776165751077272,
+   0.13529806329346966
+  ],
+  "RESERVE": [
+   0.070868204449229,
+   0.060407172842460215,
+   0.08810173812118678,
+   0.07653567734315497,
+   0.13128073321461964,
+   0.09084449109004518,
+   0.10267412091473237,
+   -0.20567517932009735,
+   0.053669394972826176,
+   0.08954043988475863,
+   0.12261220088322891
+  ]
+ },
+ "deviation": "contamination family includes the hostile worlds (neurite halo, motion, registration jitter) added before any held-out evaluation",
+ "ranking_CONFIRMATION": [
+  "offtarget_with_optics",
+  "contamination",
+  "mixture",
+  "coupling_with_optics",
+  "local_field_with_optics"
+ ],
+ "ranking_RESERVE": [
+  "offtarget_with_optics",
+  "contamination",
+  "mixture",
+  "coupling_with_optics",
+  "local_field_with_optics"
+ ]
+}

@@ -17,6 +17,8 @@ wormlab = "wormlab.cli:main"
 data = ["wormneuroatlas", "remfile"]
 # learned graph models and AUROC
 models = ["torch", "scikit-learn>=1.2"]
+# Randi atlas analyses
+randi = ["wormneuroatlas", "statsmodels", "scikit-learn>=1.2"]
 dev = ["pytest>=7"]
 
 [tool.setuptools.packages.find]

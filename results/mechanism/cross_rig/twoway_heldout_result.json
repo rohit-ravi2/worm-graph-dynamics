@@ -1,0 +1,100 @@
+{
+ "prereg": "twoway_heldout_prereg.json",
+ "rule": "REPLICATES iff in all four windows the median two-way ratio is in [0.7, 1.4] and its animal-bootstrap 95% CI contains 1",
+ "results": {
+  "CONFIRMATION": {
+   "spontaneous": {
+    "n_animals": 37,
+    "n_pairs": 532,
+    "oneway": 1.013444748199517,
+    "twoway": 0.5232593994183066,
+    "twoway_ci": [
+     0.22179931985170798,
+     0.9018215311312714
+    ],
+    "ok": false
+   },
+   "pre": {
+    "n_animals": 37,
+    "n_pairs": 532,
+    "oneway": 0.8051702744172553,
+    "twoway": 0.45367554065676574,
+    "twoway_ci": [
+     0.13656779046612383,
+     0.7250271955763419
+    ],
+    "ok": false
+   },
+   "evoked": {
+    "n_animals": 37,
+    "n_pairs": 532,
+    "oneway": 0.9849660409351815,
+    "twoway": 0.4907004794215344,
+    "twoway_ci": [
+     0.20454882161710533,
+     0.744283092680082
+    ],
+    "ok": false
+   },
+   "post_quiet": {
+    "n_animals": 37,
+    "n_pairs": 532,
+    "oneway": 1.1196247673663846,
+    "twoway": 0.5215741925301507,
+    "twoway_ci": [
+     0.20159768553110952,
+     0.8588884231123983
+    ],
+    "ok": false
+   },
+   "REPLICATES": false
+  },
+  "RESERVE": {
+   "spontaneous": {
+    "n_animals": 43,
+    "n_pairs": 734,
+    "oneway": 0.8932297652216792,
+    "twoway": 0.4252047127831299,
+    "twoway_ci": [
+     0.25318660227078454,
+     0.8155078896217741
+    ],
+    "ok": false
+   },
+   "pre": {
+    "n_animals": 43,
+    "n_pairs": 734,
+    "oneway": 0.8365807217561849,
+    "twoway": 0.3871384664319656,
+    "twoway_ci": [
+     0.22069794966838682,
+     0.7242160985278012
+    ],
+    "ok": false
+   },
+   "evoked": {
+    "n_animals": 43,
+    "n_pairs": 734,
+    "oneway": 1.2083663382398553,
+    "twoway": 0.4816435281406317,
+    "twoway_ci": [
+     0.3005542257450752,
+     0.81464126940363
+    ],
+    "ok": false
+   },
+   "post_quiet": {
+    "n_animals": 43,
+    "n_pairs": 734,
+    "oneway": 0.8355763848365605,
+    "twoway": 0.38491499989069966,
+    "twoway_ci": [
+     0.2541127210921401,
+     0.7681916159246512
+    ],
+    "ok": false
+   },
+   "REPLICATES": false
+  }
+ }
+}

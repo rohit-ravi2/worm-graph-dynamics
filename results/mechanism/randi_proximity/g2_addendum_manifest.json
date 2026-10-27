@@ -1,0 +1,24 @@
+{
+ "addendum_sha256": "db16d526a6d2a231816ad0ddf87b5aa407f321555b2cc156cbec99c3f627295b",
+ "contrasts_py_sha256": "92e92280db1354eeb9b91a36958b6bb22416dc317ffe0c1a30988b19b21781ef",
+ "created_utc": "2026-09-16T22:04:54.662612+00:00",
+ "family": "haze_vs_discrete",
+ "floor": 0.03,
+ "git_head": "e00a6a43ee1cc94c1214af248500d494bacec0d0",
+ "judge_partitions": [
+  "RESERVE",
+  "CONFIRMATION"
+ ],
+ "kind": "g2_addendum",
+ "max_events_per_class": 12,
+ "observations_py_sha256": "5df15cbb375bf7b9f288a59fdc115ff7328d7b34d275b6be068d1d132ce50aad",
+ "parent_manifest_sha256": "6c0626b1d77d0415a7a76396830ea7c4a3e3392cf27b2859b555ea0eed032004",
+ "primary_shell_um": [
+  3.5,
+  5.0
+ ],
+ "rationale": "haze_vs_discrete was inspected only on DISCOVERY (reextract, 24 animals); untouched on CONFIRMATION and RESERVE for every lineage",
+ "raw_traces_extractor_sha256": "4c92fb94170559b87c15b4bb8306749b6961111a1a56b0945646f3b3a2b9094c",
+ "voxel_extractor": "voxel_x1/1.0",
+ "voxel_extractor_sha256": "739b3c607ea9fed2c4af425567bbfd2f3eabafbc65ca097046df4807d6371d86"
+}

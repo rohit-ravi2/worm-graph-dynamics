@@ -1,0 +1,21 @@
+{
+ "null": "wtqgt0.5",
+ "B": {
+  "observed": 0.0303,
+  "control_mean": 0.023192000000000004,
+  "control_p2_5": 0.016735,
+  "control_p97_5": 0.031775,
+  "frac_control_ge_observed": 0.08,
+  "n_draws": 50,
+  "observed_minus_control_mean": 0.007107999999999996
+ },
+ "C": {
+  "observed": 0.0278,
+  "control_mean": 0.026868000000000003,
+  "control_p2_5": 0.0194925,
+  "control_p97_5": 0.03431,
+  "frac_control_ge_observed": 0.44,
+  "n_draws": 50,
+  "observed_minus_control_mean": 0.0009319999999999953
+ }
+}
